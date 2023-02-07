@@ -32,50 +32,50 @@ const Meta = () => {
                     data-n-head="ssr"
                     data-hid="description"
                     name="description"
-                    content="Portfolio for web developer David Sorensen"
+                    content="Website for Flavor Exceptional Catering"
                 />
                 <meta
                     data-n-head="ssr"
                     name="twitter:card"
-                    content="Portfolio for web developer David Sorensen"
+                    content="Website for Flavor Exceptional Catering"
                 />
                 <meta
                     data-n-head="ssr"
                     name="twitter:title"
-                    content="David J Sorensen"
+                    content="Flavor Exceptional Catering"
                 />
                 <meta
                     data-n-head="ssr"
                     name="twitter:description"
-                    content="Portfolio for web developer David Sorensen"
+                    content="Website for Flavor Exceptional Catering"
                 />
                 <meta
                     data-n-head="ssr"
                     name="twitter:creator"
-                    content="David Sorensen"
+                    content="Flavor Exceptional Catering"
                 />
 
                 <meta
                     data-n-head="ssr"
                     name="og:title"
-                    content="David J Sorensen"
+                    content="Flavor Exceptional Catering"
                 />
                 <meta data-n-head="ssr" name="og:type" content="website" />
                 <meta
                     data-n-head="ssr"
                     name="og:url"
-                    content="https://davidjsorensen.com"
+                    content="https://flavorcville.com"
                 />
 
                 <meta
                     data-n-head="ssr"
                     name="og:description"
-                    content="Portfolio for web developer David Sorensen"
+                    content="Website for Flavor Exceptional Catering"
                 />
                 <meta
                     data-n-head="ssr"
                     name="og:site_name"
-                    content="David J Sorensen"
+                    content="Flavor Exceptional Catering"
                 />
                 <link
                     data-n-head="ssr"

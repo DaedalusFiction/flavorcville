@@ -1,12 +1,19 @@
 // 1. Meta
 
-const siteName = "David J Sorensen";
+const siteName = "Flavor Exceptional Catering";
 
 const hero = {
     image: {
         url: "/images/charlene.webp",
         alt: "nautilus shell design",
         attribution: "Shubham Dhage on Unsplash",
+    },
+};
+const header = {
+    image: {
+        url: "/images/flavorLogo.webp",
+        alt: "Flavor Exceptional Catering",
+        attribution: "Flavor Cville",
     },
 };
 
@@ -185,4 +192,11 @@ const contactConfig = {
 
 // 2. Layout
 
-export { siteName, homePage, portfolioProjects, personalItems, contactConfig };
+export {
+    siteName,
+    header,
+    homePage,
+    portfolioProjects,
+    personalItems,
+    contactConfig,
+};

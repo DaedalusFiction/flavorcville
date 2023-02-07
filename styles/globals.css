@@ -77,38 +77,6 @@ a {
     font-size: 1rem;
 }
 
-.flex-1 {
-    display: flex;
-    gap: 1em;
-}
-.flex-2 {
-    display: flex;
-    gap: 2em;
-}
-.flex-3 {
-    display: flex;
-    gap: 3em;
-}
-
-.m-1 {
-    margin: 0.25em;
-}
-.m-2 {
-    margin: 0.5em;
-}
-.m-3 {
-    margin: 0.75em;
-}
-.p-1 {
-    padding: 0.25em;
-}
-.p-1 {
-    padding: 0.5em;
-}
-.p-1 {
-    padding: 0.75em;
-}
-
 .centered {
     justify-content: center;
 }
@@ -156,4 +124,28 @@ a {
 .storyBody p {
     margin: 0;
     line-height: 1.6em;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #484041;
+}
+
+.hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #484041;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }

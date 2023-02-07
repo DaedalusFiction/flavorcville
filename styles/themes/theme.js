@@ -4,12 +4,12 @@ let theme = createTheme({
     palette: {
         mode: "light",
         primary: {
-            main: "#A52422",
+            main: "#0D3B66",
             off: "#FBFFF1",
         },
         secondary: {
             // main: "#CBEAA6",
-            main: "#FFC482",
+            main: "#F95738",
             // main: "#04A777",
             // main: "#DC965A",
         },
@@ -36,7 +36,7 @@ let theme = createTheme({
     },
     font: {
         primary: "Raleway",
-        accent: "Monument",
+        accent: "EB Garamond",
     },
 });
 
@@ -57,7 +57,7 @@ theme = createTheme(theme, {
             // color: theme.palette.primary.off,
             // fontWeight: "900",
             lineHeight: ".85em",
-            fontSize: "clamp(2.5rem, 6vw, 7rem)",
+            fontSize: "clamp(2.5rem, 3.5vw, 7rem)",
             letterSpacing: ".025em",
             textTransform: "uppercase",
         },

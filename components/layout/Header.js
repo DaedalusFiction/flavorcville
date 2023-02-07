@@ -5,8 +5,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { useEffect } from "react";
+import { header } from "../../siteInfo";
 import theme from "../../styles/themes/theme";
 import ExpandingText from "../general/ExpandingText";
+import NativeImage from "../general/NativeImage";
 import NavMenu from "./NavMenu";
 
 const Header = () => {
@@ -42,10 +44,7 @@ const Header = () => {
                     scrollPosition > 50
                         ? "0px 5px 5px rgba(0, 0, 0, 0.2)"
                         : "transparent",
-                backgroundColor:
-                    scrollPosition > 50
-                        ? theme.palette.primary.main
-                        : baseHeaderColor,
+                backgroundColor: "white",
             }}
         >
             <Container maxWidth="xl">
@@ -57,23 +56,16 @@ const Header = () => {
                         flexWrap: "wrap",
                     }}
                 >
-                    <Box sx={{ cursor: "pointer" }}>
-                        <ExpandingText>
-                            <Link href="/">
-                                <Typography
-                                    variant="h4"
-                                    component="p"
-                                    sx={{
-                                        color: theme.palette.custom.lightMuted,
-                                        transition: "300ms",
-                                        transitionProperty: "ease-in-out",
-                                    }}
-                                >
-                                    David J Sorensen
-                                </Typography>
-                            </Link>
-                        </ExpandingText>
-                    </Box>
+                    <Link href="/">
+                        <Box sx={{ cursor: "pointer" }}>
+                            <NativeImage
+                                image={header.image}
+                                maxSize={200}
+                                url={header.image.url}
+                            />
+                        </Box>
+                    </Link>
+
                     <Box
                         sx={{
                             display: { xs: "none", md: "flex" },
@@ -82,37 +74,36 @@ const Header = () => {
                         }}
                     >
                         <Typography
+                            className="hover-underline-animation"
                             sx={{
-                                transition: "300ms",
-                                color:
-                                    pathName === "/resume"
-                                        ? theme.palette.custom.light
-                                        : theme.palette.custom.lightMuted,
-                                "&:hover": {
-                                    color: theme.palette.custom.light,
-                                },
+                                fontWeight: "700",
+                                color: theme.palette.custom.dark,
                             }}
                         >
-                            <Link href="/resume">Resume</Link>
+                            <Link href="/menus">Sample Menus</Link>
+                        </Typography>
+                        <Typography
+                            className="hover-underline-animation"
+                            sx={{
+                                fontWeight: "700",
+                                color: theme.palette.custom.dark,
+                            }}
+                        >
+                            <Link href="/greek-life">Greek Life</Link>
                         </Typography>
                         <Typography
                             // variant="h6"
+                            className="hover-underline-animation"
                             sx={{
-                                transition: "300ms",
-                                color:
-                                    pathName === "/portfolio"
-                                        ? theme.palette.custom.light
-                                        : theme.palette.custom.lightMuted,
-                                "&:hover": {
-                                    color: theme.palette.custom.light,
-                                },
+                                fontWeight: "700",
+                                color: theme.palette.custom.dark,
                             }}
                         >
-                            <Link href="/portfolio">Portfolio</Link>
+                            <Link href="/about-us">About Us</Link>
                         </Typography>
                         <Link href="/contact">
                             <Button variant="outlined" color="secondary">
-                                Contact
+                                Book Now
                             </Button>
                         </Link>
                     </Box>
