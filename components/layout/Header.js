@@ -56,15 +56,26 @@ const Header = () => {
                         flexWrap: "wrap",
                     }}
                 >
-                    <Link href="/">
-                        <Box sx={{ cursor: "pointer" }}>
-                            <NativeImage
-                                image={header.image}
-                                maxSize={200}
-                                url={header.image.url}
-                            />
-                        </Box>
-                    </Link>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "2rem",
+                        }}
+                    >
+                        <Link href="/">
+                            <Box sx={{ cursor: "pointer" }}>
+                                <NativeImage
+                                    image={header.image}
+                                    maxSize={200}
+                                    url={header.image.url}
+                                />
+                            </Box>
+                        </Link>
+                        <Typography sx={{ fontWeight: "500" }}>
+                            <a href="tel:4348255038">(434) 123-4567</a>
+                        </Typography>
+                    </Box>
 
                     <Box
                         sx={{
@@ -102,7 +113,7 @@ const Header = () => {
                             <Link href="/about-us">About Us</Link>
                         </Typography>
                         <Link href="/contact">
-                            <Button variant="outlined" color="secondary">
+                            <Button variant="contained" color="primary">
                                 Book Now
                             </Button>
                         </Link>

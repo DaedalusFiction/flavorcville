@@ -3,10 +3,13 @@
 const siteName = "Flavor Exceptional Catering";
 
 const hero = {
-    image: {
-        url: "/images/charlene.webp",
-        alt: "nautilus shell design",
-        attribution: "Shubham Dhage on Unsplash",
+    imageOne: {
+        url: "/images/flourish2.svg",
+        alt: "decorative flourish",
+    },
+    imageTwo: {
+        url: "/images/flourish3.svg",
+        alt: "decorative flourish",
     },
 };
 const header = {
@@ -19,8 +22,8 @@ const header = {
 
 const homePage = {
     image: {
-        url: "/images/profile-river.jpg",
-        alt: "David Sorensen in WTJU tee shirt",
+        url: "/images/aboutPreview.webp",
+        alt: "Chefs Danny and Sandy",
     },
     image2: { url: "/images/caduceus.png", alt: "nautilus shell design" },
     image3: { url: "/images/vision.png", alt: "nautilus shell design" },
@@ -193,6 +196,7 @@ const contactConfig = {
 // 2. Layout
 
 export {
+    hero,
     siteName,
     header,
     homePage,

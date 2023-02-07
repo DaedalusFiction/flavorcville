@@ -8,14 +8,12 @@ let theme = createTheme({
             off: "#FBFFF1",
         },
         secondary: {
-            // main: "#CBEAA6",
-            main: "#F95738",
-            // main: "#04A777",
-            // main: "#DC965A",
+            main: "#FF4724",
+            // main: "#F95738",
         },
         background: {
             // default: "#fefefe",
-            default: "#fffceb",
+            default: "white",
             // default: "#FBFBF2",
             accent: "#ffeccd",
             dark: "#484041",
@@ -36,7 +34,8 @@ let theme = createTheme({
     },
     font: {
         primary: "Raleway",
-        accent: "EB Garamond",
+        secondary: "EB Garamond",
+        accent: "Satisfy",
     },
 });
 
@@ -52,7 +51,7 @@ theme = createTheme(theme, {
     },
     typography: {
         h1: {
-            fontFamily: theme.font.accent,
+            fontFamily: theme.font.secondary,
             color: theme.palette.custom.dark,
             // color: theme.palette.primary.off,
             // fontWeight: "900",
@@ -63,7 +62,7 @@ theme = createTheme(theme, {
         },
         h2: {
             color: theme.palette.custom.dark,
-            fontFamily: theme.font.accent,
+            fontFamily: theme.font.secondary,
             fontWeight: "600",
             lineHeight: "1em",
             fontSize: "clamp(1.5rem, 2.3vw, 7rem)",
@@ -72,7 +71,7 @@ theme = createTheme(theme, {
         },
         h3: {
             color: theme.palette.custom.dark,
-            fontFamily: theme.font.accent,
+            fontFamily: theme.font.secondary,
             letterSpacing: ".025em",
             fontSize: "2rem",
             fontWeight: "400",
@@ -80,19 +79,20 @@ theme = createTheme(theme, {
         },
         h4: {
             color: theme.palette.custom.dark,
-            fontFamily: theme.font.accent,
+            fontFamily: theme.font.secondary,
             textTransform: "uppercase",
             fontSize: "1rem",
             fontWeight: "400",
         },
         h5: {
-            fontFamily: theme.font.primary,
-            fontSize: "1.25rem",
+            fontFamily: theme.font.secondary,
+            fontSize: "1.75rem",
             fontWeight: "400",
         },
         h6: {
             fontWeight: "650",
-            fontSize: "1.25rem",
+            fontFamily: theme.font.accent,
+            fontSize: "2.25rem",
         },
 
         subtitle1: {
@@ -115,7 +115,7 @@ theme = createTheme(theme, {
         },
         body2: {
             fontFamily: theme.font.primary,
-            fontSize: "1.25rem",
+            fontSize: "1.5rem",
             lineHeight: "1.5rem",
             color: theme.palette.custom.dark,
         },

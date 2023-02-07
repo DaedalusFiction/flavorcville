@@ -2,7 +2,10 @@ import { ArrowCircleDown, ArrowRightAlt } from "@mui/icons-material";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import Link from "next/link";
+import { hero } from "../../siteInfo";
 import theme from "../../styles/themes/theme";
+import NativeImage from "../general/NativeImage";
+import SizedImage from "../general/SizedImage";
 
 const Hero = () => {
     return (
@@ -20,12 +23,20 @@ const Hero = () => {
                     <Box
                         sx={{
                             backgroundColor: theme.palette.secondary.main,
-                            padding: "40vh 4rem 20vh 4rem",
+                            padding: "20vh 4rem 20vh 4rem",
                             display: "flex",
                             flexDirection: "column",
-                            gap: "2rem",
+                            alignItems: "center",
+                            gap: "1rem",
                         }}
                     >
+                        <Box sx={{ transform: "scaleY(-1)" }}>
+                            <SizedImage
+                                image={hero.imageTwo}
+                                height={100}
+                                width={250}
+                            />
+                        </Box>
                         <Typography
                             variant="h1"
                             sx={{
@@ -33,13 +44,33 @@ const Hero = () => {
                                 textAlign: "center",
                             }}
                         >
-                            Exceptional Catering for Exceptional Events
+                            Exceptional Catering
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            sx={{
+                                fontFamily: "Satisfy",
+                                color: theme.palette.custom.light,
+                                textAlign: "center",
+                            }}
+                        >
+                            for
+                        </Typography>
+                        <Typography
+                            variant="h1"
+                            sx={{
+                                color: theme.palette.custom.light,
+                                textAlign: "center",
+                            }}
+                        >
+                            Exceptional Events
                         </Typography>
                         <Box
                             sx={{
                                 display: "flex",
                                 gap: "1em",
                                 justifyContent: "center",
+                                marginTop: "1rem",
                             }}
                         >
                             <Button variant="contained" color="primary">
@@ -49,6 +80,11 @@ const Hero = () => {
                                 Book Now
                             </Button>
                         </Box>
+                        <SizedImage
+                            image={hero.imageTwo}
+                            height={100}
+                            width={250}
+                        />
                     </Box>
                 </Grid>
             </Grid>
