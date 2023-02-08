@@ -73,12 +73,16 @@ const Hero = () => {
                                 marginTop: "1rem",
                             }}
                         >
-                            <Button variant="contained" color="primary">
-                                View Menu
-                            </Button>
-                            <Button variant="contained" color="primary">
-                                Book Now
-                            </Button>
+                            <Link href="/contact">
+                                <Button variant="contained" color="primary">
+                                    View Menu
+                                </Button>
+                            </Link>
+                            <Link href="/contact">
+                                <Button variant="contained" color="primary">
+                                    Book Now
+                                </Button>
+                            </Link>
                         </Box>
                         <SizedImage
                             image={hero.imageTwo}

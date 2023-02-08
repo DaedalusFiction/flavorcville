@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Button, Divider, Typography } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
 import Hero from "../components/home/Hero";
@@ -20,6 +20,8 @@ import {
 import SizedImage from "../components/general/SizedImage";
 import CornerBorders from "../components/general/CornerBorders";
 import SellingPoint from "../components/home/SellingPoint";
+import Link from "next/link";
+import MenuPreview from "../components/home/MenuPreview";
 
 export default function Home() {
     return (
@@ -43,13 +45,12 @@ export default function Home() {
                                 component="h2"
                                 sx={{ textAlign: "center" }}
                             >
-                                Create a memory that will last a lifetime...
+                                Create memories that will last a lifetime
                             </Typography>
                             <Typography
                                 sx={{
                                     textAlign: "center",
                                     maxWidth: "75ch",
-                                    fontStyle: "italic",
                                     marginBottom: "1em",
                                 }}
                             >
@@ -74,7 +75,7 @@ export default function Home() {
                 <Container maxWidth="lg">
                     <Grid container>
                         <Grid item xs={12} md={3.5}>
-                            <SellingPoint title="Customized">
+                            <SellingPoint title="Responsive">
                                 Working with the client directly and getting to
                                 know their exact needs is something the Flavor
                                 team loves to do. We learn more about your needs
@@ -114,7 +115,7 @@ export default function Home() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={3.5}>
-                            <SellingPoint title="Thoroughness">
+                            <SellingPoint title="Attentive">
                                 We make sure that every detail is covered for
                                 your event by attending walk-throughs and
                                 staying in contact through the event date on any
@@ -152,7 +153,7 @@ export default function Home() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={3.5}>
-                            <SellingPoint title="Experience">
+                            <SellingPoint title="Experienced">
                                 Flavor has over 30 years combined experience in
                                 the field of Catering and Hospitality. Countless
                                 successful events from weddings and graduation
@@ -180,11 +181,11 @@ export default function Home() {
                     >
                         <Typography
                             variant="h6"
-                            sx={{ textAlign: "center", fontSize: "3rem" }}
+                            sx={{ textAlign: "center", fontSize: "4rem" }}
                         >
                             Our Mission
                         </Typography>
-                        <Box sx={{ width: "8rem" }}>
+                        <Box sx={{ width: "8rem", marginBottom: "1rem" }}>
                             <Divider
                                 sx={{
                                     background: theme.palette.custom.darkMuted,
@@ -197,6 +198,30 @@ export default function Home() {
                             combine thoughtfully crafted food and service with
                             any celebration.
                         </Typography>
+                        <Typography>
+                            We strive to provide the highest quality food and
+                            service to each of our clients. Whether you are
+                            planning a wedding, hosting a corporate event, or
+                            putting together a once-in-a-lifetime brunch, we
+                            will work closely with you to craft an experience
+                            that will have everyone talking about it for years
+                            to come.
+                        </Typography>
+                        <Typography>
+                            Our mission may end at the table, but it starts well
+                            before that. We are committed to sourcing all of our
+                            ingredients from local, sustainable, and fair-trade
+                            vendors whenever possible. We believe that great
+                            food comes from great community, and we design our
+                            experiences to reflect that commitment.
+                        </Typography>
+                        <Box sx={{ display: "flex", justifyContent: "center" }}>
+                            <Link href="/about">
+                                <Button variant="contained" color="primary">
+                                    Learn More
+                                </Button>
+                            </Link>
+                        </Box>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -206,9 +231,75 @@ export default function Home() {
                             url={homePage.image.url}
                             maxSize={800}
                         />
+                        <Typography
+                            variant="subtitle1"
+                            sx={{ fontSize: ".85rem", textAlign: "center" }}
+                        >
+                            Chefs Danny and Sandy
+                        </Typography>
                     </Box>
                 </Grid>
             </Grid>
+            <Box
+                className="section"
+                sx={{ backgroundColor: theme.palette.secondary.main }}
+            >
+                <Container maxWidth="xl">
+                    <Typography
+                        variant="h6"
+                        sx={{
+                            color: theme.palette.custom.light,
+                            textAlign: "center",
+                            fontSize: "4rem",
+                            marginBottom: ".5em",
+                        }}
+                    >
+                        Sample Menus
+                    </Typography>
+                    <Box
+                        sx={{
+                            border: "1px solid " + theme.palette.custom.light,
+                            padding: "2rem",
+                        }}
+                    >
+                        <Grid container spacing={4}>
+                            <Grid item xs={12} md={3}>
+                                <MenuPreview title="Fiesta">
+                                    Impress your friends with a delicious South
+                                    American Feast!
+                                </MenuPreview>
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <MenuPreview title="Fiesta">
+                                    Impress your friends with a delicious South
+                                    American Feast!
+                                </MenuPreview>
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <MenuPreview title="Fiesta">
+                                    Impress your friends with a delicious South
+                                    American Feast!
+                                </MenuPreview>
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <MenuPreview title="Fiesta">
+                                    Impress your friends with a delicious South
+                                    American Feast!
+                                </MenuPreview>
+                            </Grid>
+                        </Grid>
+                    </Box>
+                </Container>
+            </Box>
+            <Box
+                sx={{
+                    backgroundImage:
+                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/stock3.webp)",
+                    backgroundSize: "cover",
+                    backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
+                    height: "50vh",
+                }}
+            />
         </Container>
     );
 }

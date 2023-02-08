@@ -25,8 +25,8 @@ const homePage = {
         url: "/images/aboutPreview.webp",
         alt: "Chefs Danny and Sandy",
     },
-    image2: { url: "/images/caduceus.png", alt: "nautilus shell design" },
-    image3: { url: "/images/vision.png", alt: "nautilus shell design" },
+    image2: { url: "/images/stock2.webp", alt: "stock image" },
+    image3: { url: "/images/stock3.webp", alt: "stock image" },
     image4: { url: "/images/healthcare.png", alt: "nautilus shell design" },
     image5: { url: "/images/drugs.png", alt: "nautilus shell design" },
     quote1: {

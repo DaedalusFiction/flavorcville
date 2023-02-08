@@ -120,8 +120,8 @@ theme = createTheme(theme, {
             color: theme.palette.custom.dark,
         },
         caption: {
-            color: theme.palette.custom.dark,
-            fontSize: ".95rem",
+            color: theme.palette.custom.darkMuted,
+            fontSize: ".75rem",
         },
     },
     components: {
