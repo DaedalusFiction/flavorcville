@@ -5,52 +5,60 @@ import Link from "next/link";
 import React from "react";
 import theme from "../../styles/themes/theme";
 
-const MenuPreview = ({ children, title }) => {
+const MenuPreview = ({ children, title, image }) => {
     return (
-        <Box>
-            <Box
-                sx={{
-                    backgroundImage:
-                        "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/stock2.webp)",
-                    backgroundSize: "cover",
-                    backgroundPosition: {
-                        xs: "0% 0%",
-                        md: "50% 50%",
-                    },
-                    padding: "30vh 0",
-                }}
-            />
-            <Typography
-                variant="h2"
-                sx={{
-                    textAlign: "center",
-                    color: theme.palette.custom.light,
-                    marginTop: "1em",
-                }}
-            >
-                {title}
-            </Typography>
-            <Box sx={{ margin: "1rem 5rem" }}>
-                <Divider
+        <Box
+            sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                height: "100%",
+            }}
+        >
+            <Box>
+                <Box
                     sx={{
-                        background: theme.palette.custom.lightMuted,
+                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(${image.url})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: {
+                            xs: "0% 0%",
+                            md: "50% 50%",
+                        },
+                        padding: "30vh 0",
                     }}
                 />
+                <Typography
+                    variant="h2"
+                    sx={{
+                        textAlign: "center",
+                        color: theme.palette.custom.light,
+                        marginTop: "1em",
+                    }}
+                >
+                    {title}
+                </Typography>
+                <Box sx={{ margin: "1rem 5rem" }}>
+                    <Divider
+                        sx={{
+                            background: theme.palette.custom.lightMuted,
+                        }}
+                    />
+                </Box>
+                <Typography
+                    sx={{
+                        textAlign: "center",
+                        color: theme.palette.custom.light,
+                        margin: "1em 1em 0 1em",
+                    }}
+                >
+                    {children}
+                </Typography>
             </Box>
-            <Typography
-                sx={{
-                    textAlign: "center",
-                    color: theme.palette.custom.light,
-                    margin: "1em 1em 0 1em",
-                }}
-            >
-                {children}
-            </Typography>
             <Box
                 sx={{
                     display: "flex",
                     justifyContent: "center",
-                    marginTop: "1rem",
+                    marginTop: "3rem",
                 }}
             >
                 <Link href="/contact">

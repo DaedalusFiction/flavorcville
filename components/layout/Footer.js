@@ -1,4 +1,4 @@
-import { MailOutline, OpenInNew } from "@mui/icons-material";
+import { Favorite, MailOutline, OpenInNew, Phone } from "@mui/icons-material";
 import { Button, Divider, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import Link from "next/link";
@@ -21,7 +21,7 @@ const Footer = () => {
                                 variant="h4"
                                 sx={{ color: theme.palette.custom.light }}
                             >
-                                Need a website?
+                                Planning an event?
                             </Typography>
                             <Divider
                                 sx={{
@@ -30,7 +30,7 @@ const Footer = () => {
                                 }}
                             />
                             <Box sx={{ display: "flex", gap: "1rem" }}>
-                                <OpenInNew
+                                <Phone
                                     sx={{
                                         color: theme.palette.custom.light,
                                     }}
@@ -40,9 +40,9 @@ const Footer = () => {
                                         style={{
                                             color: theme.palette.custom.light,
                                         }}
-                                        href="https://fictionalweb.com"
+                                        href="tel:4347603777"
                                     >
-                                        fictionalweb.com
+                                        (434) 760-3777
                                     </a>
                                 </ExpandingText>
                             </Box>
@@ -65,7 +65,7 @@ const Footer = () => {
                                         }}
                                         href="mailto:hello@fictionalweb.com"
                                     >
-                                        hello@fictionalweb.com
+                                        hello@flavorcville.com
                                     </a>
                                 </ExpandingText>
                             </Box>
@@ -118,8 +118,7 @@ const Footer = () => {
                         >
                             Fictional Web
                         </span>
-                    </Link>{" "}
-                    (That&rsquo;s me)
+                    </Link>
                 </Typography>
             </Container>
         </Box>

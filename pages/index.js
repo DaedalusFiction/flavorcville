@@ -22,6 +22,7 @@ import CornerBorders from "../components/general/CornerBorders";
 import SellingPoint from "../components/home/SellingPoint";
 import Link from "next/link";
 import MenuPreview from "../components/home/MenuPreview";
+import VerticalDivider from "../components/layout/VerticalDivider";
 
 export default function Home() {
     return (
@@ -86,34 +87,11 @@ export default function Home() {
                                 freshest at every occasion.
                             </SellingPoint>
                         </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            md={0.75}
-                            sx={{
-                                display: {
-                                    xs: "none",
-                                    md: "flex",
-                                    flexDirection: "column",
-                                },
-                            }}
-                        >
-                            <Box
-                                sx={{
-                                    height: "100%",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                }}
-                            >
-                                <Divider
-                                    orientation="vertical"
-                                    sx={{
-                                        background:
-                                            theme.palette.custom.lightMuted,
-                                    }}
-                                />
-                            </Box>
-                        </Grid>
+
+                        <VerticalDivider
+                            width={0.75}
+                            color={theme.palette.custom.lightMuted}
+                        />
                         <Grid item xs={12} md={3.5}>
                             <SellingPoint title="Attentive">
                                 We make sure that every detail is covered for
@@ -124,34 +102,10 @@ export default function Home() {
                                 a personal level.
                             </SellingPoint>
                         </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            md={0.75}
-                            sx={{
-                                display: {
-                                    xs: "none",
-                                    md: "flex",
-                                    flexDirection: "column",
-                                },
-                            }}
-                        >
-                            <Box
-                                sx={{
-                                    height: "100%",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                }}
-                            >
-                                <Divider
-                                    orientation="vertical"
-                                    sx={{
-                                        background:
-                                            theme.palette.custom.lightMuted,
-                                    }}
-                                />
-                            </Box>
-                        </Grid>
+                        <VerticalDivider
+                            width={0.75}
+                            color={theme.palette.custom.lightMuted}
+                        />
                         <Grid item xs={12} md={3.5}>
                             <SellingPoint title="Experienced">
                                 Flavor has over 30 years combined experience in
@@ -166,80 +120,119 @@ export default function Home() {
                     </Grid>
                 </Container>
             </Box>
-            <Grid container>
-                <Grid item xs={12} md={6}>
-                    <Box
-                        sx={{
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "1rem",
-                            alignItems: "center",
-                            padding: "10vw",
-                            height: "100%",
-                            justifyContent: "center",
-                        }}
-                    >
-                        <Typography
-                            variant="h6"
-                            sx={{ textAlign: "center", fontSize: "4rem" }}
-                        >
-                            Our Mission
-                        </Typography>
-                        <Box sx={{ width: "8rem", marginBottom: "1rem" }}>
-                            <Divider
-                                sx={{
-                                    background: theme.palette.custom.darkMuted,
-                                }}
-                            />
-                        </Box>
-                        <Typography>
-                            At <strong>Flavor Exceptional Catering</strong>, the
-                            success of your event is our number one priority. We
-                            combine thoughtfully crafted food and service with
-                            any celebration.
-                        </Typography>
-                        <Typography>
-                            We strive to provide the highest quality food and
-                            service to each of our clients. Whether you are
-                            planning a wedding, hosting a corporate event, or
-                            putting together a once-in-a-lifetime brunch, we
-                            will work closely with you to craft an experience
-                            that will have everyone talking about it for years
-                            to come.
-                        </Typography>
-                        <Typography>
-                            Our mission may end at the table, but it starts well
-                            before that. We are committed to sourcing all of our
-                            ingredients from local, sustainable, and fair-trade
-                            vendors whenever possible. We believe that great
-                            food comes from great community, and we design our
-                            experiences to reflect that commitment.
-                        </Typography>
-                        <Box sx={{ display: "flex", justifyContent: "center" }}>
-                            <Link href="/about">
-                                <Button variant="contained" color="primary">
-                                    Learn More
-                                </Button>
-                            </Link>
-                        </Box>
-                    </Box>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                    <Box sx={{ padding: "10vw" }}>
-                        <NativeImage
-                            image={homePage.image}
-                            url={homePage.image.url}
-                            maxSize={800}
-                        />
-                        <Typography
-                            variant="subtitle1"
-                            sx={{ fontSize: ".85rem", textAlign: "center" }}
-                        >
-                            Chefs Danny and Sandy
-                        </Typography>
-                    </Box>
-                </Grid>
-            </Grid>
+            <Box sx={{ background: theme.palette.secondary.main }}>
+                <Box
+                    sx={{
+                        background: "white",
+                        clipPath: "ellipse(200% 78% at 10% 20%)",
+                    }}
+                >
+                    <Container className="section">
+                        <Grid container>
+                            <Grid item xs={12} md={6}>
+                                <Box
+                                    sx={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        gap: "1rem",
+                                        alignItems: "center",
+                                        padding: "2rem",
+                                        height: "100%",
+                                        justifyContent: "center",
+                                    }}
+                                >
+                                    <Typography
+                                        variant="h6"
+                                        sx={{
+                                            textAlign: "center",
+                                            fontSize: "4rem",
+                                        }}
+                                    >
+                                        Our Mission
+                                    </Typography>
+                                    <Box
+                                        sx={{
+                                            width: "8rem",
+                                            marginBottom: "1rem",
+                                        }}
+                                    >
+                                        <Divider
+                                            sx={{
+                                                background:
+                                                    theme.palette.custom
+                                                        .darkMuted,
+                                            }}
+                                        />
+                                    </Box>
+                                    <Typography>
+                                        At{" "}
+                                        <strong>
+                                            Flavor Exceptional Catering
+                                        </strong>
+                                        , the success of your event is our
+                                        number one priority. We combine
+                                        thoughtfully crafted food and service
+                                        with any celebration.
+                                    </Typography>
+                                    <Typography>
+                                        We strive to provide the highest quality
+                                        food and service to each of our clients.
+                                        Whether you are planning a wedding,
+                                        hosting a corporate event, or putting
+                                        together a once-in-a-lifetime brunch, we
+                                        will work closely with you to craft an
+                                        experience that will have everyone
+                                        talking about it for years to come.
+                                    </Typography>
+                                    <Typography>
+                                        Our mission may end at the table, but it
+                                        starts well before that. We are
+                                        committed to sourcing all of our
+                                        ingredients from local, sustainable, and
+                                        fair-trade vendors whenever possible. We
+                                        believe that great food comes from great
+                                        community, and we design our experiences
+                                        to reflect that commitment.
+                                    </Typography>
+                                    <Box
+                                        sx={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                        }}
+                                    >
+                                        <Link href="/about">
+                                            <Button
+                                                variant="contained"
+                                                color="primary"
+                                            >
+                                                Learn More
+                                            </Button>
+                                        </Link>
+                                    </Box>
+                                </Box>
+                            </Grid>
+                            <Grid item xs={12} md={6}>
+                                <Box sx={{ padding: "2rem" }}>
+                                    <NativeImage
+                                        image={homePage.image}
+                                        url={homePage.image.url}
+                                        maxSize={800}
+                                    />
+                                    <Typography
+                                        variant="subtitle1"
+                                        sx={{
+                                            fontSize: ".85rem",
+                                            textAlign: "center",
+                                        }}
+                                    >
+                                        Chefs Danny and Sandy
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                        </Grid>
+                    </Container>
+                </Box>
+            </Box>
             <Box
                 className="section"
                 sx={{ backgroundColor: theme.palette.secondary.main }}
@@ -256,41 +249,108 @@ export default function Home() {
                     >
                         Sample Menus
                     </Typography>
-                    <Box
-                        sx={{
-                            border: "1px solid " + theme.palette.custom.light,
-                            padding: "2rem",
-                        }}
-                    >
+                    <Box>
                         <Grid container spacing={4}>
-                            <Grid item xs={12} md={3}>
-                                <MenuPreview title="Fiesta">
-                                    Impress your friends with a delicious South
-                                    American Feast!
+                            <Grid item xs={12} md={2.7}>
+                                <MenuPreview
+                                    title="Charcuterie"
+                                    image={homePage.image3}
+                                >
+                                    Like finger food? So do we! Feast! This is a
+                                    longer description so that I can test to see
+                                    how it looks when one description is longer
+                                    and one is sorter.
                                 </MenuPreview>
                             </Grid>
-                            <Grid item xs={12} md={3}>
-                                <MenuPreview title="Fiesta">
+                            <VerticalDivider
+                                color={theme.palette.custom.lightMuted}
+                                width={0.4}
+                            />
+                            <Grid item xs={12} md={2.7}>
+                                <MenuPreview
+                                    title="Fiesta"
+                                    image={homePage.image4}
+                                >
                                     Impress your friends with a delicious South
-                                    American Feast!
+                                    American Feast! Whether you&rsquo;re in the
+                                    mood for tacos, quesadillas, flautas, or
+                                    chips and guac, this meal is sure to
+                                    satisfy!
                                 </MenuPreview>
                             </Grid>
-                            <Grid item xs={12} md={3}>
-                                <MenuPreview title="Fiesta">
-                                    Impress your friends with a delicious South
-                                    American Feast!
+
+                            <VerticalDivider
+                                width={0.4}
+                                color={theme.palette.custom.lightMuted}
+                            />
+                            <Grid item xs={12} md={2.7}>
+                                <MenuPreview
+                                    title="Crawfish Boil"
+                                    image={homePage.image5}
+                                >
+                                    Get a taste of good old New Orleans
+                                    community with this delicious crawdad feast,
+                                    which includes potatoes, corn, cornbread,
+                                    and hurricanes!
                                 </MenuPreview>
                             </Grid>
-                            <Grid item xs={12} md={3}>
-                                <MenuPreview title="Fiesta">
-                                    Impress your friends with a delicious South
-                                    American Feast!
+                            <VerticalDivider
+                                width={0.4}
+                                color={theme.palette.custom.lightMuted}
+                            />
+                            <Grid item xs={12} md={2.7}>
+                                <MenuPreview
+                                    title="Barbecue"
+                                    image={homePage.image6}
+                                >
+                                    Go all out on gameday with our delicious
+                                    selection of roasted meats, grilled sides,
+                                    and sweet tea! Be sure to order extra so you
+                                    can send everyone home with something for
+                                    later!
                                 </MenuPreview>
                             </Grid>
                         </Grid>
                     </Box>
                 </Container>
             </Box>
+            <Container maxWidth="xl">
+                <Grid className="section" id="showcase" container spacing={4}>
+                    <Grid item xs={12}>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                gap: "1rem",
+                            }}
+                        >
+                            <Typography
+                                variant="h6"
+                                component="h2"
+                                sx={{ textAlign: "center" }}
+                            >
+                                Let us take care of you
+                            </Typography>
+                            <Typography
+                                sx={{
+                                    textAlign: "center",
+                                    maxWidth: "75ch",
+                                    marginBottom: "1em",
+                                }}
+                            >
+                                Planning an event doesn&rsquo;t have to be a
+                                hassle. Let us do all the heavy lifting, so that
+                                you can get back to what&rsquo;s important:
+                                spending quality time with your family and
+                                cherished ones.
+                            </Typography>
+                            <Favorite />
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Container>
             <Box
                 sx={{
                     backgroundImage:

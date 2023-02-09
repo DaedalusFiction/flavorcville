@@ -149,3 +149,6 @@ a {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+.underline-light::after {
+    background-color: #fffceb;
+}

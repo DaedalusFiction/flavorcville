@@ -12,7 +12,7 @@ const Hero = () => {
         <Box
             sx={{
                 backgroundImage:
-                    "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/stock1.webp)",
+                    "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/stock1.webp)",
                 backgroundSize: "cover",
                 backgroundPosition: { xs: "50% 0%", md: "0% 0%" },
             }}
@@ -75,7 +75,7 @@ const Hero = () => {
                         >
                             <Link href="/contact">
                                 <Button variant="contained" color="primary">
-                                    View Menu
+                                    View Menus
                                 </Button>
                             </Link>
                             <Link href="/contact">

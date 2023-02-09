@@ -12,6 +12,16 @@ const hero = {
         alt: "decorative flourish",
     },
 };
+const menus = {
+    imageOne: {
+        url: "/images/flourish4.svg",
+        alt: "decorative flourish",
+    },
+    imageTwo: {
+        url: "/images/flourish3.svg",
+        alt: "decorative flourish",
+    },
+};
 const header = {
     image: {
         url: "/images/flavorLogo.webp",
@@ -27,8 +37,9 @@ const homePage = {
     },
     image2: { url: "/images/stock2.webp", alt: "stock image" },
     image3: { url: "/images/stock3.webp", alt: "stock image" },
-    image4: { url: "/images/healthcare.png", alt: "nautilus shell design" },
-    image5: { url: "/images/drugs.png", alt: "nautilus shell design" },
+    image4: { url: "/images/stock4.jpg", alt: "stock image" },
+    image5: { url: "/images/stock5.jpg", alt: "stock image" },
+    image6: { url: "/images/stock6.jpg", alt: "stock image" },
     quote1: {
         attribution: "Charlene",
         number: "1",
@@ -197,6 +208,7 @@ const contactConfig = {
 
 export {
     hero,
+    menus,
     siteName,
     header,
     homePage,

@@ -73,7 +73,7 @@ const Header = () => {
                             </Box>
                         </Link>
                         <Typography sx={{ fontWeight: "500" }}>
-                            <a href="tel:4348255038">(434) 123-4567</a>
+                            <a href="tel:4348255038">(434) 760-3777</a>
                         </Typography>
                     </Box>
 
