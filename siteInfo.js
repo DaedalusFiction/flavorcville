@@ -21,6 +21,10 @@ const menus = {
         url: "/images/flourish3.svg",
         alt: "decorative flourish",
     },
+    imageThree: { url: "/images/stock5.jpg", alt: "stock image" },
+    imageFour: { url: "/images/stock4.jpg", alt: "stock image" },
+    imageFive: { url: "/images/stock3.webp", alt: "stock image" },
+    imageSix: { url: "/images/stock6.jpg", alt: "stock image" },
 };
 const header = {
     image: {
@@ -36,9 +40,9 @@ const homePage = {
         alt: "Chefs Danny and Sandy",
     },
     image2: { url: "/images/stock2.webp", alt: "stock image" },
-    image3: { url: "/images/stock3.webp", alt: "stock image" },
+    image3: { url: "/images/stock5.jpg", alt: "stock image" },
     image4: { url: "/images/stock4.jpg", alt: "stock image" },
-    image5: { url: "/images/stock5.jpg", alt: "stock image" },
+    image5: { url: "/images/stock3.webp", alt: "stock image" },
     image6: { url: "/images/stock6.jpg", alt: "stock image" },
     quote1: {
         attribution: "Charlene",

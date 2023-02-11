@@ -37,11 +37,9 @@ const index = () => {
                         Spinach Tomato Feta
                     </Typography>
                     <Typography variant="caption">
-                        Fire-roasted Southwest Pepper & Cheddar
+                        Fire-Roasted Southwest Pepper & Cheddar
                     </Typography>
-                    <Typography variant="caption">
-                        Vegan options available
-                    </Typography>
+
                     <Typography variant="body2">
                         Tofu Scramble (vegan)
                     </Typography>

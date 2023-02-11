@@ -55,13 +55,13 @@ export default function Home() {
                                     marginBottom: "1em",
                                 }}
                             >
-                                <strong>Flavor</strong> provides exceptional
-                                service from simple drop offs to full service
-                                events. Whether you are looking to feed a few
-                                for a breakfast or luncheon or if you are
-                                looking to make your next intimate event
-                                exceptional, we are here to put together a
-                                package that fits your needs perfectly!
+                                <strong>Flavor Exceptional Catering</strong>{" "}
+                                provides outstanding service, from simple
+                                drop-offs to full-service events. Whether you
+                                are looking to feed a few for a breakfast or
+                                luncheon or make your next intimate event
+                                exceptional, we are here to craft an experience
+                                that fits your needs perfectly!
                             </Typography>
                             <Favorite />
                         </Box>
@@ -77,14 +77,14 @@ export default function Home() {
                     <Grid container>
                         <Grid item xs={12} md={3.5}>
                             <SellingPoint title="Responsive">
-                                Working with the client directly and getting to
-                                know their exact needs is something the Flavor
-                                team loves to do. We learn more about your needs
-                                then source foods and products based on your
+                                There&rsquo;s nothing we love more than working
+                                directly with our clients and getting to know
+                                their exact thoughts and ideas, so that we can
+                                source foods and products based on their
                                 preferences. Whether it&rsquo;s meats from local
-                                Ragged Branch Farms or Produce from growers
-                                along Skyline Drive, we strive to use the
-                                freshest at every occasion.
+                                Ragged Branch Farms or produce from growers
+                                along Skyline Drive, we are committed to using
+                                the freshest ingredients for every occasion.
                             </SellingPoint>
                         </Grid>
 
@@ -94,12 +94,13 @@ export default function Home() {
                         />
                         <Grid item xs={12} md={3.5}>
                             <SellingPoint title="Attentive">
-                                We make sure that every detail is covered for
-                                your event by attending walk-throughs and
-                                staying in contact through the event date on any
-                                changes. Staffing your event thoroughly so that
-                                each guest feels that they are taken care of on
-                                a personal level.
+                                We will make sure that every detail taken care
+                                of by attending walk-throughs and maintaining
+                                contact throughout the days leading up to your
+                                event, so that if anything changes, we can
+                                handle it. We&rsquo;ll staff your event
+                                thoroughly so that each guest feels that they
+                                are taken care of on a personal level.
                             </SellingPoint>
                         </Grid>
                         <VerticalDivider
@@ -108,13 +109,14 @@ export default function Home() {
                         />
                         <Grid item xs={12} md={3.5}>
                             <SellingPoint title="Experienced">
-                                Flavor has over 30 years combined experience in
-                                the field of Catering and Hospitality. Countless
-                                successful events from weddings and graduation
-                                parties to corporate lunches and all day events,
-                                we can guarantee our experience will make your
-                                next event stress free and talked about for
-                                years to come.
+                                <strong>Flavor</strong> has over 30 years
+                                combined experience in the fields of Catering
+                                and Hospitality. We have executed countless
+                                successful events, from weddings and graduation
+                                parties to corporate lunches and all-day events.
+                                We guarantee that our experience will make your
+                                next event stress-free and remembered for years
+                                to come.
                             </SellingPoint>
                         </Grid>
                     </Grid>
@@ -170,9 +172,9 @@ export default function Home() {
                                             Flavor Exceptional Catering
                                         </strong>
                                         , the success of your event is our
-                                        number one priority. We combine
-                                        thoughtfully crafted food and service
-                                        with any celebration.
+                                        number one priority. We bring
+                                        thoughtfully crafted food and
+                                        top-quality service to any celebration.
                                     </Typography>
                                     <Typography>
                                         We strive to provide the highest quality
@@ -256,10 +258,11 @@ export default function Home() {
                                     title="breakfast"
                                     image={homePage.image3}
                                 >
-                                    Like finger food? So do we! Feast! This is a
-                                    longer description so that I can test to see
-                                    how it looks when one description is longer
-                                    and one is sorter.
+                                    There&rsquo;s a reason why the first meal of
+                                    the day is the most important. Start your
+                                    event off right with a selection of healthy,
+                                    fresh, delicious breakfast options, local
+                                    coffee, and hot tea.
                                 </MenuPreview>
                             </Grid>
                             <VerticalDivider
@@ -271,11 +274,11 @@ export default function Home() {
                                     title="luncheon"
                                     image={homePage.image4}
                                 >
-                                    Impress your friends with a delicious South
-                                    American Feast! Whether you&rsquo;re in the
-                                    mood for tacos, quesadillas, flautas, or
-                                    chips and guac, this meal is sure to
-                                    satisfy!
+                                    Whether you&rsquo;re looking for a light
+                                    collation or a hearty meal, Flavor
+                                    Exceptional Catering is ready with a variety
+                                    of luncheon options tailored to your
+                                    event&rsquo;s needs.
                                 </MenuPreview>
                             </Grid>
 
@@ -288,10 +291,11 @@ export default function Home() {
                                     title="dinner"
                                     image={homePage.image5}
                                 >
-                                    Get a taste of good old New Orleans
-                                    community with this delicious crawdad feast,
-                                    which includes potatoes, corn, cornbread,
-                                    and hurricanes!
+                                    Let&rsquo;s create an experience that you
+                                    and your loved ones can bond over. Flavor
+                                    Exceptional Catering will craft a
+                                    personalized dinner menu that will leave a
+                                    long-lasting impression.
                                 </MenuPreview>
                             </Grid>
                             <VerticalDivider
@@ -303,11 +307,12 @@ export default function Home() {
                                     title="cocktail"
                                     image={homePage.image6}
                                 >
-                                    Go all out on gameday with our delicious
-                                    selection of roasted meats, grilled sides,
-                                    and sweet tea! Be sure to order extra so you
-                                    can send everyone home with something for
-                                    later!
+                                    There&rsquo;s nothing better than a wide
+                                    selection of delicious appetizers to bring
+                                    out the best of conversation. Between our
+                                    unique flavor profiles and vegetarian and
+                                    vegan options, there&rsquo;s sure to be
+                                    something for everyone.
                                 </MenuPreview>
                             </Grid>
                         </Grid>
