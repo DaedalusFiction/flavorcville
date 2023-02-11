@@ -33,9 +33,11 @@ let theme = createTheme({
         },
     },
     font: {
+        primaryMenu: "Gruppo",
         primary: "Raleway",
         secondary: "EB Garamond",
-        accent: "Satisfy",
+        accent: "Alex Brush",
+        // accent: "Satisfy",
     },
 });
 
@@ -92,7 +94,8 @@ theme = createTheme(theme, {
         h6: {
             fontWeight: "650",
             fontFamily: theme.font.accent,
-            fontSize: "2.25rem",
+            fontSize: "3rem",
+            // fontSize: "2.25rem", //Satisfy
         },
 
         subtitle1: {
@@ -114,10 +117,11 @@ theme = createTheme(theme, {
             lineHeight: "1.5em",
         },
         body2: {
-            fontFamily: theme.font.primary,
+            fontFamily: theme.font.primaryMenu,
             fontSize: "1.5rem",
-            lineHeight: "1.5rem",
+            lineHeight: "1.25em",
             color: theme.palette.custom.dark,
+            textAlign: "center",
         },
         caption: {
             color: theme.palette.custom.darkMuted,

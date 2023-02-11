@@ -14,6 +14,7 @@ const index = () => {
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center",
+                        gap: ".5rem",
                     }}
                 >
                     <Typography variant="h1" sx={{ textAlign: "center" }}>
@@ -26,8 +27,12 @@ const index = () => {
                             width={150}
                         />
                     </Box>
-                    <Typography variant="h6">Stations</Typography>
-                    <Typography>Variety of Mini Egg Frittatas:</Typography>
+                    <Typography variant="h6" sx={{ marginTop: ".5em" }}>
+                        Stations
+                    </Typography>
+                    <Typography variant="body2">
+                        Variety of Mini Egg Frittatas:
+                    </Typography>
                     <Typography variant="caption">
                         Spinach Tomato Feta
                     </Typography>
@@ -37,25 +42,41 @@ const index = () => {
                     <Typography variant="caption">
                         Vegan options available
                     </Typography>
-                    <Typography>Tofu Scramble (vegan)</Typography>
+                    <Typography variant="body2">
+                        Tofu Scramble (vegan)
+                    </Typography>
                     <Typography variant="caption">
                         Sriracha & Ketchup
                     </Typography>
-                    <Typography>Bacon & Turkey Sausage</Typography>
-                    <Typography>French Toast & Syrup</Typography>
-                    <Typography>Best Breakfast Potatoes</Typography>
-                    <Typography>Fresh Fruit Salad</Typography>
-                    <Typography>Variety of Pastries</Typography>
+                    <Typography variant="body2">
+                        Bacon & Turkey Sausage
+                    </Typography>
+                    <Typography variant="body2">
+                        French Toast & Syrup
+                    </Typography>
+                    <Typography variant="body2">
+                        Best Breakfast Potatoes
+                    </Typography>
+                    <Typography variant="body2">Fresh Fruit Salad</Typography>
+                    <Typography variant="body2">Variety of Pastries</Typography>
                     <Typography variant="caption">
                         Gluten-free options
                     </Typography>
-                    <StarBorder
-                        sx={{ color: theme.palette.custom.darkMuted }}
-                    />
-                    <Typography variant="h5">
-                        Orange Juice, Infused Water, Bottled Water
+
+                    <Typography variant="h6" sx={{ marginTop: ".5em" }}>
+                        Beverages
                     </Typography>
-                    <Typography variant="h5">Coffee and Tea</Typography>
+                    <Typography variant="body2">Orange Juice</Typography>
+                    <Typography variant="body2">Infused Water</Typography>
+                    <Typography variant="body2">Bottled Water</Typography>
+                    <Typography variant="body2">Coffee</Typography>
+                    <Typography variant="body2">
+                        Black and Herbal Teas
+                    </Typography>
+                    <Typography variant="h6" sx={{ marginTop: ".5em" }}>
+                        Bon Apetit
+                    </Typography>
+                    <Favorite />
                 </Box>
             </Container>
         </Box>

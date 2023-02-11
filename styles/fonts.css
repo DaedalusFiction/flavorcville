@@ -36,7 +36,7 @@
 }
 @font-face {
     font-family: "Gruppo";
-    src: url("/fonts/Gruppo.ttf") format("truetype");
+    src: url("/fonts/Gruppo-Regular.ttf") format("truetype");
     font-weight: 1 999;
     font-display: swap;
 }

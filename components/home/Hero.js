@@ -49,9 +49,10 @@ const Hero = () => {
                         <Typography
                             variant="body2"
                             sx={{
-                                fontFamily: "Satisfy",
+                                fontFamily: "Alex Brush",
                                 color: theme.palette.custom.light,
                                 textAlign: "center",
+                                fontSize: "2.5rem",
                             }}
                         >
                             for

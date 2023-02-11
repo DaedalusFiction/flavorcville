@@ -285,7 +285,7 @@ export default function Home() {
                             />
                             <Grid item xs={12} md={2.7}>
                                 <MenuPreview
-                                    title="Dinner"
+                                    title="dinner"
                                     image={homePage.image5}
                                 >
                                     Get a taste of good old New Orleans

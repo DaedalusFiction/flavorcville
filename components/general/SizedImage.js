@@ -13,8 +13,6 @@ const SizedImage = ({ image, height, width }) => {
         >
             <Image
                 src={image.url}
-                blurDataURL={image.url}
-                placeholder="blur"
                 unoptimized
                 layout="fill"
                 objectFit="cover"
