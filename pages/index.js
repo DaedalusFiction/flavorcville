@@ -253,7 +253,7 @@ export default function Home() {
                         <Grid container spacing={4}>
                             <Grid item xs={12} md={2.7}>
                                 <MenuPreview
-                                    title="Charcuterie"
+                                    title="breakfast"
                                     image={homePage.image3}
                                 >
                                     Like finger food? So do we! Feast! This is a
@@ -268,7 +268,7 @@ export default function Home() {
                             />
                             <Grid item xs={12} md={2.7}>
                                 <MenuPreview
-                                    title="Fiesta"
+                                    title="luncheon"
                                     image={homePage.image4}
                                 >
                                     Impress your friends with a delicious South
@@ -285,7 +285,7 @@ export default function Home() {
                             />
                             <Grid item xs={12} md={2.7}>
                                 <MenuPreview
-                                    title="Crawfish Boil"
+                                    title="Dinner"
                                     image={homePage.image5}
                                 >
                                     Get a taste of good old New Orleans
@@ -300,7 +300,7 @@ export default function Home() {
                             />
                             <Grid item xs={12} md={2.7}>
                                 <MenuPreview
-                                    title="Barbecue"
+                                    title="cocktail"
                                     image={homePage.image6}
                                 >
                                     Go all out on gameday with our delicious

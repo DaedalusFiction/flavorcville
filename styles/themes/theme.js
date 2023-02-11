@@ -87,7 +87,7 @@ theme = createTheme(theme, {
         h5: {
             fontFamily: theme.font.secondary,
             fontSize: "1.75rem",
-            fontWeight: "400",
+            fontWeight: "600",
         },
         h6: {
             fontWeight: "650",

@@ -61,7 +61,7 @@ const MenuPreview = ({ children, title, image }) => {
                     marginTop: "3rem",
                 }}
             >
-                <Link href="/contact">
+                <Link href={`/menus/${title}`}>
                     <Button
                         endIcon={<ArrowRightAlt />}
                         variant="contained"
