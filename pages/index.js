@@ -15,6 +15,7 @@ import {
     Favorite,
     MailOutline,
     OpenInNew,
+    StarBorder,
     SubdirectoryArrowLeft,
 } from "@mui/icons-material";
 import SizedImage from "../components/general/SizedImage";
@@ -319,6 +320,96 @@ export default function Home() {
                     </Box>
                 </Container>
             </Box>
+            <Box className="section">
+                <Grid container>
+                    <Grid item xs={12} md={5}>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                // justifyContent: "center",
+                                alignItems: "center",
+                                // height: "100%",
+                                flexDirection: "column",
+                                padding: "2rem",
+                                gap: "1rem",
+                            }}
+                        >
+                            <Typography variant="h2">Our Partners</Typography>
+                            <StarBorder color={theme.palette.primary.main} />
+                            <Typography
+                                sx={{
+                                    maxWidth: "35ch",
+                                    textAlign: "center",
+                                    fontStyle: "italic",
+                                }}
+                            >
+                                We also provide healthy meals daily for UVA
+                                Greek Life, pre- and post-game and practice
+                                meals for UVA athletics. We are also the
+                                official caterer of the{" "}
+                                <strong>Foxfield Races</strong>.
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={7}>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: ".5rem",
+                            }}
+                        >
+                            <Divider />
+                            <Typography variant="h6">
+                                Preferred Venues
+                            </Typography>
+                            <Grid container>
+                                <Grid item xs={12} md={4}>
+                                    <Box
+                                        sx={{
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            gap: "1rem",
+                                        }}
+                                    >
+                                        <Typography>
+                                            Michael Shaps Winery
+                                        </Typography>
+                                        <Typography>Dairy Market</Typography>
+                                        <Typography>UVA Alumni Hall</Typography>
+                                    </Box>
+                                </Grid>
+                                <Grid item xs={12} md={4}>
+                                    <Box
+                                        sx={{
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            gap: "1rem",
+                                        }}
+                                    >
+                                        <Typography>
+                                            The Code Building
+                                        </Typography>
+                                        <Typography>Eastwood Winery</Typography>
+                                        <Typography>
+                                            The Barn at Edgewood
+                                        </Typography>
+                                    </Box>
+                                </Grid>
+                            </Grid>
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Box>
+            <Box
+                sx={{
+                    backgroundImage:
+                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/stock3.webp)",
+                    backgroundSize: "cover",
+                    backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
+                    height: "50vh",
+                }}
+            />
             <Container maxWidth="xl">
                 <Grid className="section" id="showcase" container spacing={4}>
                     <Grid item xs={12}>
@@ -356,15 +447,6 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </Container>
-            <Box
-                sx={{
-                    backgroundImage:
-                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/stock3.webp)",
-                    backgroundSize: "cover",
-                    backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
-                    height: "50vh",
-                }}
-            />
         </Container>
     );
 }

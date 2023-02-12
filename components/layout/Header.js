@@ -1,6 +1,7 @@
 import { ArrowRightAlt, MenuIcon } from "@mui/icons-material";
 import { Button, IconButton, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -44,7 +45,7 @@ const Header = () => {
                     scrollPosition > 50
                         ? "0px 5px 5px rgba(0, 0, 0, 0.2)"
                         : "transparent",
-                backgroundColor: "white",
+                backgroundColor: "#fcf6f5",
             }}
         >
             <Container maxWidth="xl">
@@ -65,10 +66,20 @@ const Header = () => {
                     >
                         <Link href="/">
                             <Box sx={{ cursor: "pointer" }}>
-                                <NativeImage
+                                {/* <NativeImage
                                     image={header.image}
                                     maxSize={200}
                                     url={header.image.url}
+                                /> */}
+                                <Image
+                                    src={header.image.url}
+                                    // blurDataURL={blur ? blur : image}
+                                    // placeholder="blur"
+                                    //has to be unoptimized to work with firebase storage, apparently
+                                    unoptimized
+                                    width={200}
+                                    height={60}
+                                    alt={header.image.alt}
                                 />
                             </Box>
                         </Link>
@@ -88,6 +99,7 @@ const Header = () => {
                             className="hover-underline-animation"
                             sx={{
                                 fontWeight: "700",
+                                lineHeight: "1.25em",
                                 color: theme.palette.custom.dark,
                             }}
                         >
@@ -97,6 +109,7 @@ const Header = () => {
                             className="hover-underline-animation"
                             sx={{
                                 fontWeight: "700",
+                                lineHeight: "1.25em",
                                 color: theme.palette.custom.dark,
                             }}
                         >
@@ -107,6 +120,7 @@ const Header = () => {
                             className="hover-underline-animation"
                             sx={{
                                 fontWeight: "700",
+                                lineHeight: "1.25em",
                                 color: theme.palette.custom.dark,
                             }}
                         >

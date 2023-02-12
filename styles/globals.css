@@ -9,7 +9,7 @@ body {
 :root {
     --bg-success: #e6e6e6;
     --bg-sucess: rgb(255, 252, 235);
-    --color-accent: #d61919;
+    --color-accent: #fcf6f5;
 }
 
 a {
@@ -56,7 +56,7 @@ a {
 }
 
 .section {
-    padding: 4rem 0;
+    padding: 8rem 0;
 }
 
 .link {

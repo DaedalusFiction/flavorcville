@@ -9,8 +9,8 @@ const GalleryImage = ({ image, maxSize, url, alt, blur }) => {
     return (
         <Image
             src={url ? url : image.url}
-            blurDataURL={blur ? blur : image}
-            placeholder="blur"
+            // blurDataURL={blur ? blur : image}
+            // placeholder="blur"
             //has to be unoptimized to work with firebase storage, apparently
             unoptimized
             width={maxSize}

@@ -28,7 +28,7 @@ const menus = {
 };
 const header = {
     image: {
-        url: "/images/flavorLogo.webp",
+        url: "/images/logoHeader.webp",
         alt: "Flavor Exceptional Catering",
         attribution: "Flavor Cville",
     },

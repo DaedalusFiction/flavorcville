@@ -13,7 +13,7 @@ let theme = createTheme({
         },
         background: {
             // default: "#fefefe",
-            default: "white",
+            default: "#fcf6f5",
             // default: "#FBFBF2",
             accent: "#ffeccd",
             dark: "#484041",
