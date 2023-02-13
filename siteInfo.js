@@ -26,6 +26,17 @@ const menus = {
     imageFive: { url: "/images/stock3.webp", alt: "stock image" },
     imageSix: { url: "/images/stock6.jpg", alt: "stock image" },
 };
+const greek = {
+    imageOne: { url: "/images/greek1.jpg", alt: "chicken salad" },
+    imageFour: { url: "/images/stock4.jpg", alt: "stock image" },
+    imageFive: { url: "/images/stock3.webp", alt: "stock image" },
+    imageSix: { url: "/images/stock6.jpg", alt: "stock image" },
+};
+const about = {
+    imageOne: { url: "/images/about1.jpeg", alt: "Danny and Sandy at UVA" },
+    imageTwo: { url: "/images/sandy.webp", alt: "Chef Sandy" },
+    imageThree: { url: "/images/danny.webp", alt: "Chef Danny" },
+};
 const header = {
     image: {
         url: "/images/logoHeader.webp",
@@ -212,6 +223,8 @@ const contactConfig = {
 
 export {
     hero,
+    greek,
+    about,
     menus,
     siteName,
     header,

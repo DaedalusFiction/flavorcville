@@ -3,7 +3,6 @@ import { Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import SizedImage from "../../../components/general/SizedImage";
 import { menus } from "../../../siteInfo";
-import theme from "../../../styles/themes/theme";
 
 const index = () => {
     return (

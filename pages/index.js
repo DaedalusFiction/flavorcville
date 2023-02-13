@@ -24,12 +24,14 @@ import SellingPoint from "../components/home/SellingPoint";
 import Link from "next/link";
 import MenuPreview from "../components/home/MenuPreview";
 import VerticalDivider from "../components/layout/VerticalDivider";
+import Stripes from "../components/layout/Stripes";
 
 export default function Home() {
     return (
         <Container maxWidth="xl" disableGutters>
             <Meta />
             <Hero />
+            <Stripes />
             <Container maxWidth="xl">
                 <Grid className="section" id="showcase" container spacing={4}>
                     <Grid item xs={12}>
@@ -320,6 +322,7 @@ export default function Home() {
                     </Box>
                 </Container>
             </Box>
+            <Stripes />
             <Box className="section">
                 <Grid container>
                     <Grid item xs={12} md={5}>

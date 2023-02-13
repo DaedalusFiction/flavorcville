@@ -78,7 +78,7 @@ const Header = () => {
                                     //has to be unoptimized to work with firebase storage, apparently
                                     unoptimized
                                     width={200}
-                                    height={60}
+                                    height={62}
                                     alt={header.image.alt}
                                 />
                             </Box>
@@ -124,7 +124,7 @@ const Header = () => {
                                 color: theme.palette.custom.dark,
                             }}
                         >
-                            <Link href="/about-us">About Us</Link>
+                            <Link href="/about">About Us</Link>
                         </Typography>
                         <Link href="/contact">
                             <Button variant="contained" color="primary">
