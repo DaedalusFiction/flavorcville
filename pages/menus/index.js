@@ -85,7 +85,7 @@ const index = () => {
                     sx={{ lineHeight: "2rem", textAlign: "center" }}
                     className="hover-underline-animation"
                 >
-                    <Link href="/menus/cocktails">Cocktails</Link>
+                    <Link href="/menus/cocktail">Cocktail</Link>
                 </Typography>
             </Box>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
