@@ -3,11 +3,10 @@ import { Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import SizedImage from "../../../components/general/SizedImage";
 import { menus } from "../../../siteInfo";
-import theme from "../../../styles/themes/theme";
 
 const index = () => {
     return (
-        <Box className="section" sx={{ marginTop: "8rem" }}>
+        <Box className="section menu" sx={{ marginTop: "8rem" }}>
             <Container>
                 <Box
                     sx={{
@@ -17,9 +16,7 @@ const index = () => {
                         gap: ".5rem",
                     }}
                 >
-                    <Typography variant="h1" sx={{ textAlign: "center" }}>
-                        Sample Luncheon Menu
-                    </Typography>
+                    <Typography variant="h1">Sample Luncheon Menu</Typography>
                     <Box sx={{ margin: "1rem 0" }}>
                         <SizedImage
                             image={menus.imageOne}

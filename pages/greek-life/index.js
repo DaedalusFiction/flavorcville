@@ -18,19 +18,21 @@ const index = () => {
                     alignItems: "center",
                 }}
             >
-                <Box
-                    sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        marginBottom: "4rem",
-                    }}
-                >
-                    <NativeImage
-                        image={greek.imageOne}
-                        url={greek.imageOne.url}
-                        maxSize={800}
-                    />
-                </Box>
+                <Container>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            marginBottom: "4rem",
+                        }}
+                    >
+                        <NativeImage
+                            image={greek.imageOne}
+                            url={greek.imageOne.url}
+                            maxSize={800}
+                        />
+                    </Box>
+                </Container>
                 <Typography variant="h1" sx={{ textAlign: "center" }}>
                     Greek Life
                 </Typography>

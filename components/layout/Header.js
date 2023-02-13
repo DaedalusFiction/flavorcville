@@ -1,4 +1,4 @@
-import { ArrowRightAlt, MenuIcon } from "@mui/icons-material";
+import { ArrowRightAlt, MenuIcon, Phone } from "@mui/icons-material";
 import { Button, IconButton, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import Image from "next/image";
@@ -83,9 +83,20 @@ const Header = () => {
                                 />
                             </Box>
                         </Link>
-                        <Typography sx={{ fontWeight: "500" }}>
-                            <a href="tel:4348255038">(434) 760-3777</a>
-                        </Typography>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                gap: ".5rem",
+                                alignItems: "center",
+                            }}
+                        >
+                            <Typography sx={{ fontWeight: "500" }}>
+                                <a href="tel:4348255038">(434) 760-3777</a>
+                            </Typography>
+                            {/* <Box sx={{ transform: "translateY(3px)" }}>
+                                <Phone />
+                            </Box> */}
+                        </Box>
                     </Box>
 
                     <Box

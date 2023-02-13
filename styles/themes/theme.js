@@ -95,6 +95,7 @@ theme = createTheme(theme, {
             fontWeight: "650",
             fontFamily: theme.font.accent,
             fontSize: "3rem",
+            lineHeight: "3rem",
             // fontSize: "2.25rem", //Satisfy
         },
 

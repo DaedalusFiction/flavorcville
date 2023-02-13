@@ -18,7 +18,7 @@ const NavMenu = () => {
     return (
         <Box>
             <IconButton onClick={handleClick}>
-                <MenuIcon sx={{ color: theme.palette.custom.lightMuted }} />
+                <MenuIcon sx={{ color: theme.palette.custom.darkMuted }} />
             </IconButton>
             <Menu
                 id="basic-menu"
@@ -29,13 +29,14 @@ const NavMenu = () => {
                     "aria-labelledby": "basic-button",
                 }}
             >
-                <Link href="/portfolio">
-                    <MenuItem onClick={handleClose}>Portfolio</MenuItem>
+                <Link href="/menus">
+                    <MenuItem onClick={handleClose}>Sample Menus</MenuItem>
                 </Link>
-                <Link href="/resume">
-                    <MenuItem onClick={handleClose}>
-                        R&eacute;sum&eacute;
-                    </MenuItem>
+                <Link href="/greek-life">
+                    <MenuItem onClick={handleClose}>Greek Life</MenuItem>
+                </Link>
+                <Link href="/about">
+                    <MenuItem onClick={handleClose}>About Us</MenuItem>
                 </Link>
                 <Link href="/contact">
                     <MenuItem onClick={handleClose}>Contact</MenuItem>
