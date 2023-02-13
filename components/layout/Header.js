@@ -85,7 +85,7 @@ const Header = () => {
                         </Link>
                         <Box
                             sx={{
-                                display: "flex",
+                                display: { xs: "none", md: "flex" },
                                 gap: ".5rem",
                                 alignItems: "center",
                             }}
