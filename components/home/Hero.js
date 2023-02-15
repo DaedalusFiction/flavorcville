@@ -2,12 +2,21 @@ import { ArrowCircleDown, ArrowRightAlt } from "@mui/icons-material";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import Link from "next/link";
+import { useState } from "react";
 import { hero } from "../../siteInfo";
 import theme from "../../styles/themes/theme";
 import NativeImage from "../general/NativeImage";
 import SizedImage from "../general/SizedImage";
+import HeroScroller from "./HeroScroller";
 
 const Hero = () => {
+    const [descriptions, setDescriptions] = useState([
+        "Beautiful Weddings",
+        "Productive Meetings",
+        "Awesome Birthdays",
+        "Exceptional Events",
+        "Greek Life",
+    ]);
     return (
         <Box
             sx={{
@@ -22,7 +31,10 @@ const Hero = () => {
                 <Grid item xs={12} md={5}>
                     <Box
                         sx={{
-                            backgroundColor: theme.palette.secondary.main,
+                            background: {
+                                xs: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/stock1.webp)",
+                                md: theme.palette.secondary.main,
+                            },
                             padding: "20vh 4rem 20vh 4rem",
                             display: "flex",
                             flexDirection: "column",
@@ -57,15 +69,9 @@ const Hero = () => {
                         >
                             for
                         </Typography>
-                        <Typography
-                            variant="h1"
-                            sx={{
-                                color: theme.palette.custom.light,
-                                textAlign: "center",
-                            }}
-                        >
-                            Exceptional Events
-                        </Typography>
+
+                        <HeroScroller />
+
                         <Box
                             sx={{
                                 display: "flex",

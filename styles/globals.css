@@ -10,6 +10,7 @@ body {
     --bg-success: #e6e6e6;
     --bg-sucess: rgb(255, 252, 235);
     --color-accent: #fce5e1;
+    --hero-slide-height: -81.6px;
 }
 
 a {
@@ -26,8 +27,48 @@ a {
     scroll-behavior: smooth;
 }
 
+.hero-scroller * {
+    animation: heroScroll 13000ms ease-in-out;
+}
+
 .header-fade-in {
     animation: textFadeIn 1000ms ease-in-out;
+}
+
+@keyframes heroScroll {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-177.6px);
+    }
+    20% {
+        transform: translateY(-177.6px);
+    }
+    30% {
+        transform: translateY(calc(-177.6px * 2));
+    }
+    40% {
+        transform: translateY(calc(-177.6px * 2));
+    }
+    50% {
+        transform: translateY(calc(-177.6px * 3));
+    }
+    60% {
+        transform: translateY(calc(-177.6px * 3));
+    }
+    70% {
+        transform: translateY(calc(-177.6px * 4));
+    }
+    80% {
+        transform: translateY(calc(-177.6px * 4));
+    }
+    90% {
+        transform: translateY(calc(-177.6px * 0));
+    }
+    100% {
+        transform: translateY(calc(-177.6px * 0));
+    }
 }
 
 @keyframes textFadeIn {
