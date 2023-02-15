@@ -29,6 +29,7 @@ a {
 
 .hero-scroller * {
     animation: heroScroll 13000ms ease-in-out;
+    animation-delay: 2500ms;
 }
 
 .header-fade-in {
