@@ -11,7 +11,7 @@ import { about, greek, menus } from "../../siteInfo";
 const index = () => {
     return (
         <Box className="section">
-            <Container sx={{ marginTop: "8rem" }}>
+            <Container sx={{ marginTop: "4rem" }}>
                 <Grid container spacing={8}>
                     <Grid item xs={12} md={7}>
                         <Box
@@ -50,16 +50,18 @@ const index = () => {
                             <Divider />
                             <Typography sx={{ maxWidth: "75ch" }}>
                                 <strong>Flavor Exceptional Catering</strong> was
-                                founded in 2010 by Danny and Sandy and this is
-                                just a placeholder paragraph, I just write it so
-                                that I can see what a paragraph looks like on
-                                the page, still just writing so that I get
-                                enough content.
+                                founded in 2012 with one goal in mind: Provide
+                                balanced, nutritious meals to each student
+                                living at UVA while maintaining the amazing
+                                flavor and service we pride ourselves on.
                             </Typography>
                             <Typography sx={{ maxWidth: "75ch" }}>
-                                Catering is our passion. But we also like french
-                                poodles, Disneyland, the Green Bay Packers,
-                                democracy, Tom Hanks, cardio, and flip-flops.
+                                But our mission doesn&rsquo;t end with Greek
+                                Life. In addition to unique events such as
+                                weddings, rehearsals, and dinner parties, we are
+                                also working with other local organizations such
+                                as the Boys and Girls club to share our food and
+                                passion with the rest of our community.
                             </Typography>
                         </Box>
                     </Grid>
@@ -99,20 +101,22 @@ const index = () => {
                                 <Divider sx={{ width: "80%" }} />
                                 <Typography>
                                     Sandy Archer has a tremendous gift of
-                                    hospitality and a talent for preparation and
-                                    presentation of food. She loves the joy that
-                                    preparing a great tasting meal brings! Chef
-                                    Sandy holds undergraduate and graduate
-                                    business degrees, both from the University
-                                    of Virginia. She has been involved in the
-                                    restaurant business for more than 27 years
-                                    working in several different capacities.
-                                    Many people that know Chef Sandy call her a
-                                    true Renaissance woman. Raising four
-                                    children with her husband, running a
-                                    business, staying physically fit, and
-                                    serving her community in numerous ways makes
-                                    her a true inspiration for many.
+                                    hospitality and a talent for culinary
+                                    preparation and presentation. She has been
+                                    involved in the restaurant business for more
+                                    than 27 years, and she has worked in several
+                                    different capacities, including chef,
+                                    manager, business director, and owner. She
+                                    holds undergraduate and graduate business
+                                    degrees, both from the University of
+                                    Virginia.
+                                </Typography>
+                                <Typography>
+                                    Between raising four children with her
+                                    husband, running a business, staying fit,
+                                    and serving her community in numerous ways,
+                                    Chef Sandy hopes that her life will be a
+                                    true inspiration for many.
                                 </Typography>
                             </Box>
                         </Grid>
@@ -139,28 +143,30 @@ const index = () => {
                                 </Typography>
                                 <Divider sx={{ width: "80%" }} />
                                 <Typography>
-                                    Daniel Niedermayer started his culinary
-                                    career at a young age at the Keswick Hotel
-                                    working as a banquet cook. He then went on
+                                    Daniel Niedermayer began his culinary career
+                                    at a young age at the Keswick Hotel, where
+                                    he worked as a banquet cook. He then went on
                                     to study business management at Bridgewater
                                     College. After leaving Bridgewater, he went
-                                    to work for Hilton as a food and beverage
-                                    director. There, he quickly fell back in
+                                    to work for Hilton as their Director of Food
+                                    and Beverage. There, he quickly fell back in
                                     love with the culinary aspects of
-                                    hospitality. Training with the Culinary
-                                    Institute of America and Hilton University,
-                                    he continued mastering his craft of cooking
-                                    and hospitality. He enjoys every aspect of
-                                    the kitchen from leading his team of
-                                    charismatic and talented cooks for large
-                                    events to the more intimate approach needed
-                                    for smaller, elegant cocktail gatherings.
-                                    Danny would tell you that his strongest
+                                    hospitality and began training with the
+                                    Culinary Institute of America and Hilton
+                                    University.
+                                </Typography>
+                                <Typography>
+                                    Danny enjoys every aspect of his role in the
+                                    kitchen, from the creation of delicious,
+                                    memorable dishes to the leadership of his
+                                    team of charismatic and incredibly talented
+                                    cooks. He would tell you that his strongest
                                     attributes are friendliness, patience, and
-                                    amicable communication skills. He loves the
-                                    experience of meeting each client and
-                                    designing the menus for their event around
-                                    their unique personality and specifications.
+                                    amicable communication skills, and he
+                                    cherishes the experience of meeting with
+                                    each client and designing outstanding menus
+                                    around their unique personalities and
+                                    desires.
                                 </Typography>
                             </Box>
                         </Grid>

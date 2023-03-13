@@ -125,6 +125,68 @@ export default function Home() {
                     </Grid>
                 </Container>
             </Box>
+            <Box
+                sx={{
+                    backgroundImage:
+                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/stock8.webp)",
+                    backgroundSize: "cover",
+                    backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
+                    height: "50vh",
+                }}
+            />
+            <Box
+                className="section"
+                sx={{ background: theme.palette.secondary.main }}
+            >
+                <Container maxWidth="md">
+                    <Typography
+                        variant="h6"
+                        sx={{
+                            textAlign: "center",
+                            color: theme.palette.custom.light,
+                        }}
+                    >
+                        Vegetarian & Vegan Friendly
+                    </Typography>
+                    <Box sx={{ display: "flex", justifyContent: "center" }}>
+                        <Divider
+                            sx={{
+                                background: theme.palette.custom.lightMuted,
+                                margin: "1rem 0",
+                                width: "20rem",
+                            }}
+                        />
+                    </Box>
+                    <Typography
+                        sx={{
+                            textAlign: "center",
+                            color: theme.palette.custom.light,
+                        }}
+                    >
+                        <strong>Flavor Exceptional Catering</strong> is
+                        dedicated to making sure that everyone at your event
+                        goes home satisfied. We are able to tailor any of our
+                        dishes to your unique dietary restrictions, and we can
+                        do so while maintaining the flavor and quality that
+                        makes us, well, exceptional.
+                    </Typography>
+                    <br />
+                    <Typography
+                        sx={{
+                            textAlign: "center",
+                            color: theme.palette.custom.light,
+                        }}
+                    >
+                        But our commitment doesn&rsquo;t end with vegetarian and
+                        vegan options. Whether you&rsquo;re looking for a meal
+                        plan that is gluten-free and/or dairy-free, that works
+                        around allergies or any other preferences, we&rsquo;ll
+                        work with you to make sure you get exactly what
+                        you&rsquo;re looking for.
+                    </Typography>
+                </Container>
+            </Box>
+            <Stripes />
             <Box sx={{ background: theme.palette.secondary.main }}>
                 <Box
                     sx={{
@@ -419,7 +481,7 @@ export default function Home() {
             <Box
                 sx={{
                     backgroundImage:
-                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/stock3.webp)",
+                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/stock7.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
                     height: "50vh",

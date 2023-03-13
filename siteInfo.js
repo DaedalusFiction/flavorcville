@@ -21,16 +21,19 @@ const menus = {
         url: "/images/flourish3.svg",
         alt: "decorative flourish",
     },
-    imageThree: { url: "/images/stock5.jpg", alt: "stock image" },
-    imageFour: { url: "/images/stock4.jpg", alt: "stock image" },
+    imageThree: {
+        url: "/images/stock9.webp",
+        alt: "two bowls of oatmeal and fruit",
+    },
+    imageFour: { url: "/images/stock4.webp", alt: "stock image" },
     imageFive: { url: "/images/stock3.webp", alt: "stock image" },
-    imageSix: { url: "/images/stock6.jpg", alt: "stock image" },
+    imageSix: { url: "/images/stock6.webp", alt: "stock image" },
 };
 const greek = {
     imageOne: { url: "/images/greek1.jpg", alt: "chicken salad" },
-    imageFour: { url: "/images/stock4.jpg", alt: "stock image" },
+    imageFour: { url: "/images/stock4.webp", alt: "stock image" },
     imageFive: { url: "/images/stock3.webp", alt: "stock image" },
-    imageSix: { url: "/images/stock6.jpg", alt: "stock image" },
+    imageSix: { url: "/images/stock6.webp", alt: "stock image" },
 };
 const about = {
     imageOne: { url: "/images/about1.jpeg", alt: "Danny and Sandy at UVA" },
@@ -51,10 +54,10 @@ const homePage = {
         alt: "Chefs Danny and Sandy",
     },
     image2: { url: "/images/stock2.webp", alt: "stock image" },
-    image3: { url: "/images/stock5.jpg", alt: "stock image" },
-    image4: { url: "/images/stock4.jpg", alt: "stock image" },
+    image3: { url: "/images/stock5.webp", alt: "stock image" },
+    image4: { url: "/images/stock4.webp", alt: "stock image" },
     image5: { url: "/images/stock3.webp", alt: "stock image" },
-    image6: { url: "/images/stock6.jpg", alt: "stock image" },
+    image6: { url: "/images/stock6.webp", alt: "stock image" },
     quote1: {
         attribution: "Charlene",
         number: "1",

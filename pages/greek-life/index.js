@@ -39,15 +39,30 @@ const index = () => {
                 <StarBorder />
 
                 <Typography sx={{ maxWidth: "75ch", textAlign: "center" }}>
-                    When you choose to join Greek life at UVA, whether a
-                    sorority or fraternity, the last thing you want your members
-                    to worry about is the food. Flavor has you covered with
-                    great, healthy meals for lunch or dinner and provides
-                    exceptional service. You can trust us when you say your
-                    chapter has the best food.
+                    Community is built on conversation, and conversation is
+                    built on food. When you choose to join Greek life at UVA,
+                    you want to be sure that the community you&rsquo;re becoming
+                    part of has that solid foundation. We&rsquo;ve got you
+                    covered with delicious, healthy meals for breakfast, lunch,
+                    or dinner, along with the exceptional service we have come
+                    to be known for over the years.
+                </Typography>
+                <Typography sx={{ maxWidth: "75ch", textAlign: "center" }}>
+                    And when it comes to Greek Life, you also want to know that
+                    you&rsquo;re offering something unique, something that will
+                    spark conversations outside of the chapter house.
+                    That&rsquo;s why we are committed to working closely with
+                    each and every sorority and fraternity to develop meal plans
+                    that bring out the best in your chapter.
+                </Typography>
+                <Typography sx={{ maxWidth: "75ch", textAlign: "center" }}>
+                    When you go with{" "}
+                    <strong>Flavor Exceptional Catering</strong>, you know
+                    you&rsquo;ll feel confident when you say you&rsquo;ve got
+                    the best food in town.
                 </Typography>
                 <Link href="/contact">
-                    <Button variant="outlined" color="primary">
+                    <Button variant="contained" color="primary">
                         Get Started
                     </Button>
                 </Link>
