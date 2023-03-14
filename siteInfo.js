@@ -22,12 +22,12 @@ const menus = {
         alt: "decorative flourish",
     },
     imageThree: {
-        url: "/images/stock9.webp",
+        url: "/images/breakfast.webp",
         alt: "two bowls of oatmeal and fruit",
     },
-    imageFour: { url: "/images/stock4.webp", alt: "stock image" },
-    imageFive: { url: "/images/stock3.webp", alt: "stock image" },
-    imageSix: { url: "/images/stock6.webp", alt: "stock image" },
+    imageFour: { url: "/images/lunch.webp", alt: "stock image" },
+    imageFive: { url: "/images/dinner.webp", alt: "stock image" },
+    imageSix: { url: "/images/cocktail.webp", alt: "stock image" },
 };
 const greek = {
     imageOne: { url: "/images/greek1.jpg", alt: "chicken salad" },
@@ -54,10 +54,10 @@ const homePage = {
         alt: "Chefs Danny and Sandy",
     },
     image2: { url: "/images/stock2.webp", alt: "stock image" },
-    image3: { url: "/images/stock5.webp", alt: "stock image" },
-    image4: { url: "/images/stock4.webp", alt: "stock image" },
-    image5: { url: "/images/stock3.webp", alt: "stock image" },
-    image6: { url: "/images/stock6.webp", alt: "stock image" },
+    image3: { url: "/images/breakfast.webp", alt: "stock image" },
+    image4: { url: "/images/lunch.webp", alt: "stock image" },
+    image5: { url: "/images/dinner.webp", alt: "stock image" },
+    image6: { url: "/images/cocktail.webp", alt: "stock image" },
     quote1: {
         attribution: "Charlene",
         number: "1",

@@ -128,7 +128,7 @@ export default function Home() {
             <Box
                 sx={{
                     backgroundImage:
-                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/stock8.webp)",
+                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner3.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
                     height: "50vh",
@@ -482,7 +482,7 @@ export default function Home() {
             <Box
                 sx={{
                     backgroundImage:
-                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/stock7.webp)",
+                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner4.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
                     height: "50vh",

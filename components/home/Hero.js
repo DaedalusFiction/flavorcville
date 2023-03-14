@@ -1,38 +1,30 @@
-import { ArrowCircleDown, ArrowRightAlt } from "@mui/icons-material";
 import { Box, Button, Grid, Typography } from "@mui/material";
-import { Container } from "@mui/system";
 import Link from "next/link";
-import { useState } from "react";
 import { hero } from "../../siteInfo";
 import theme from "../../styles/themes/theme";
-import NativeImage from "../general/NativeImage";
 import SizedImage from "../general/SizedImage";
 import HeroScroller from "./HeroScroller";
 
 const Hero = () => {
-    const [descriptions, setDescriptions] = useState([
-        "Beautiful Weddings",
-        "Productive Meetings",
-        "Awesome Birthdays",
-        "Exceptional Events",
-        "Greek Life",
-    ]);
     return (
-        <Box
-            sx={{
-                backgroundImage:
-                    "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/stock1.webp)",
-                backgroundSize: "cover",
-                backgroundPosition: { xs: "50% 0%", md: "0% 0%" },
-            }}
-        >
+        <Box>
             <Grid container>
-                <Grid item xs={12} md={7}></Grid>
+                <Grid item xs={12} md={7}>
+                    <Box
+                        sx={{
+                            height: "100%",
+                            backgroundImage:
+                                "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/hero.webp)",
+                            backgroundSize: "cover",
+                            backgroundPosition: { xs: "0% 0%", md: "40% 0%" },
+                        }}
+                    ></Box>
+                </Grid>
                 <Grid item xs={12} md={5}>
                     <Box
                         sx={{
                             background: {
-                                xs: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/stock1.webp)",
+                                xs: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/hero.webp)",
                                 md: theme.palette.secondary.main,
                             },
                             padding: "20vh 4rem 20vh 4rem",
