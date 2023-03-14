@@ -165,7 +165,8 @@ export default function Home() {
                     >
                         <strong>Flavor Exceptional Catering</strong> is
                         dedicated to making sure that everyone at your event
-                        goes home satisfied. We are able to tailor any of our
+                        goes home satisfied. We make every dish we serve from
+                        scratch, meaning that we are able to tailor any of our
                         dishes to your unique dietary restrictions, and we can
                         do so while maintaining the flavor and quality that
                         makes us, well, exceptional.

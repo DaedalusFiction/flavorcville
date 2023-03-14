@@ -55,14 +55,14 @@ const index = () => {
                                 living at UVA while maintaining the amazing
                                 flavor and service we pride ourselves on.
                             </Typography>
-                            <Typography sx={{ maxWidth: "75ch" }}>
+                            {/* <Typography sx={{ maxWidth: "75ch" }}>
                                 But our mission doesn&rsquo;t end with Greek
                                 Life. In addition to unique events such as
                                 weddings, rehearsals, and dinner parties, we are
                                 also working with other local organizations such
                                 as the Boys and Girls club to share our food and
                                 passion with the rest of our community.
-                            </Typography>
+                            </Typography> */}
                         </Box>
                     </Grid>
                 </Grid>
