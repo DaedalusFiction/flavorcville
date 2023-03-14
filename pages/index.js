@@ -131,7 +131,7 @@ export default function Home() {
                         "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner3.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
-                    height: "50vh",
+                    height: { xs: "0", md: "40vh" },
                 }}
             />
             <Box
@@ -485,7 +485,7 @@ export default function Home() {
                         "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner4.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
-                    height: "50vh",
+                    height: { xs: "0", md: "40vh" },
                 }}
             />
             <Container maxWidth="xl">

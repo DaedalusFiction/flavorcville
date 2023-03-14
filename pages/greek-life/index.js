@@ -9,8 +9,9 @@ import { greek, menus } from "../../siteInfo";
 
 const index = () => {
     return (
-        <Container className="section">
+        <Container>
             <Box
+                className="section"
                 sx={{
                     display: "flex",
                     flexDirection: "column",
@@ -38,7 +39,12 @@ const index = () => {
                 </Typography>
                 <StarBorder />
 
-                <Typography sx={{ maxWidth: "75ch", textAlign: "center" }}>
+                <Typography
+                    sx={{
+                        maxWidth: "75ch",
+                        textAlign: { xs: "left", md: "center" },
+                    }}
+                >
                     Community is built on conversation, and conversation is
                     built on food. When you choose to join Greek life at UVA,
                     you want to be sure that the community you&rsquo;re becoming
@@ -47,7 +53,12 @@ const index = () => {
                     or dinner, along with the exceptional service we have come
                     to be known for over the years.
                 </Typography>
-                <Typography sx={{ maxWidth: "75ch", textAlign: "center" }}>
+                <Typography
+                    sx={{
+                        maxWidth: "75ch",
+                        textAlign: { xs: "left", md: "center" },
+                    }}
+                >
                     And when it comes to Greek Life, you also want to know that
                     you&rsquo;re offering something unique, something that will
                     spark conversations outside of the chapter house.
@@ -55,7 +66,12 @@ const index = () => {
                     each and every sorority and fraternity to develop meal plans
                     that bring out the best in your chapter.
                 </Typography>
-                <Typography sx={{ maxWidth: "75ch", textAlign: "center" }}>
+                <Typography
+                    sx={{
+                        maxWidth: "75ch",
+                        textAlign: { xs: "left", md: "center" },
+                    }}
+                >
                     When you go with{" "}
                     <strong>Flavor Exceptional Catering</strong>, you know
                     you&rsquo;ll feel confident when you say you&rsquo;ve got
