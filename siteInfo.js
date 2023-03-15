@@ -213,7 +213,7 @@ const personalItems = [
 ];
 
 const contactConfig = {
-    website: "Flavor",
+    website: "Flavor Website Contact Form",
     category: "contact",
     fields: [
         { name: "Name", type: "text", value: "" },

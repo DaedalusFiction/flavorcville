@@ -21,7 +21,7 @@ const ContactForm = ({ config }) => {
 
         emailjs
             .send(
-                "service_t1yo7dn",
+                "service_z7hpw17",
                 "template_pfang7n",
                 templateParams,
                 "aMDOy4kUud9rd0Yg9"

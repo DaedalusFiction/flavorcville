@@ -22,7 +22,7 @@ const HeroScroller = () => {
                         key={index}
                         variant="h1"
                         sx={{
-                            color: theme.palette.custom.light,
+                            color: "black",
                             textAlign: "center",
                             marginBottom: "2em",
                         }}

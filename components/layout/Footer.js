@@ -1,5 +1,5 @@
-import { Favorite, MailOutline, OpenInNew, Phone } from "@mui/icons-material";
-import { Button, Divider, Grid, Typography } from "@mui/material";
+import { HouseOutlined, MailOutline } from "@mui/icons-material";
+import { Divider, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import Link from "next/link";
 import React from "react";
@@ -10,41 +10,36 @@ import SocialMediaIcons from "../general/SocialMediaIcons";
 const Footer = () => {
     return (
         <Box
-            className="section"
-            sx={{ background: theme.palette.primary.main }}
+            sx={{ background: theme.palette.secondary.main, padding: "4rem 0" }}
         >
             <Container maxWidth="xl">
                 <Grid container spacing={4}>
                     <Grid item xs={12} md={6}>
                         <Box>
-                            <Typography
-                                variant="h4"
-                                sx={{ color: theme.palette.custom.light }}
-                            >
-                                Planning an event?
-                            </Typography>
                             <Divider
                                 sx={{
                                     margin: "1rem 0",
-                                    background: theme.palette.custom.lightMuted,
+                                    background: theme.palette.custom.dark,
                                 }}
                             />
-                            <Box sx={{ display: "flex", gap: "1rem" }}>
-                                <Phone
+                            <Box
+                                sx={{
+                                    display: "flex",
+                                    gap: "1rem",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <HouseOutlined
                                     sx={{
-                                        color: theme.palette.custom.light,
+                                        color: "black",
                                     }}
                                 />
-                                <ExpandingText>
-                                    <a
-                                        style={{
-                                            color: theme.palette.custom.light,
-                                        }}
-                                        href="tel:4347603777"
-                                    >
-                                        (434) 760-3777
-                                    </a>
-                                </ExpandingText>
+                                <Box>
+                                    <Typography>600 Concord Ave</Typography>
+                                    <Typography>
+                                        Charlottesville, VA 22902
+                                    </Typography>
+                                </Box>
                             </Box>
                             <Box
                                 sx={{
@@ -55,13 +50,13 @@ const Footer = () => {
                             >
                                 <MailOutline
                                     sx={{
-                                        color: theme.palette.custom.light,
+                                        color: "black",
                                     }}
                                 />
                                 <ExpandingText>
                                     <a
                                         style={{
-                                            color: theme.palette.custom.light,
+                                            color: theme.palette.custom.dark,
                                         }}
                                         href="mailto:flavorcateringevents@gmail.com"
                                     >
@@ -79,31 +74,22 @@ const Footer = () => {
                                 alignItems: { xs: "start", md: "end" },
                             }}
                         >
-                            <Typography
-                                variant="h4"
-                                sx={{
-                                    color: theme.palette.custom.light,
-                                    textAlign: { xs: "start", md: "end" },
-                                }}
-                            >
-                                Want to see more?
-                            </Typography>
                             <Divider
                                 sx={{
                                     margin: "1rem 0",
                                     width: "100%",
-                                    background: theme.palette.custom.lightMuted,
+                                    background: theme.palette.custom.dark,
                                 }}
                             />
                             <SocialMediaIcons
-                                color={theme.palette.custom.light}
+                                color={theme.palette.custom.dark}
                             />
                         </Box>
                     </Grid>
                 </Grid>
                 <Typography
                     sx={{
-                        color: theme.palette.custom.lightMuted,
+                        color: theme.palette.custom.dark,
                         textAlign: "center",
                         marginTop: "1em",
                     }}

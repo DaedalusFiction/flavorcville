@@ -69,7 +69,7 @@ const index = () => {
                         Black and Herbal Teas
                     </Typography>
                     <Typography variant="h6" sx={{ marginTop: ".5em" }}>
-                        Bon Apetit
+                        Bon App&eacute;tit
                     </Typography>
                     <Favorite />
                 </Box>

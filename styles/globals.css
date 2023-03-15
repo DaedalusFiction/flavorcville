@@ -30,6 +30,7 @@ a {
 .hero-scroller * {
     animation: heroScroll 13000ms ease-in-out;
     animation-delay: 2500ms;
+    animation-iteration-count: infinite;
 }
 
 .header-fade-in {
@@ -175,7 +176,7 @@ a {
 .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color: #484041;
+    color: black;
 }
 
 .hover-underline-animation::after {
@@ -186,7 +187,7 @@ a {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #484041;
+    background-color: black;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -196,5 +197,5 @@ a {
     transform-origin: bottom left;
 }
 .underline-light::after {
-    background-color: #fffceb;
+    background-color: black;
 }

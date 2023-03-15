@@ -33,9 +33,19 @@ const SocialMediaIcons = ({ fontSize, color }) => {
                     </IconButton>
                 </Tooltip>
             </Link> */}
+            <Link href="https://www.facebook.com/profile.php?id=100066422816647">
+                <Tooltip title="facebook">
+                    <IconButton aria-label="facebook">
+                        <FacebookIcon
+                            sx={{ fontSize: fontSize, color: color }}
+                        />
+                    </IconButton>
+                </Tooltip>
+            </Link>
+
             <Link href="https://www.instagram.com/flavorcville/">
-                <Tooltip title="twitter">
-                    <IconButton aria-label="twitter">
+                <Tooltip title="Instagram">
+                    <IconButton aria-label="instagram">
                         <Instagram sx={{ fontSize: fontSize, color: color }} />
                     </IconButton>
                 </Tooltip>

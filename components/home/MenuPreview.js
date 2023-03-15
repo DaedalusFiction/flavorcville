@@ -31,7 +31,7 @@ const MenuPreview = ({ children, title, image }) => {
                     variant="h2"
                     sx={{
                         textAlign: "center",
-                        color: theme.palette.custom.light,
+                        color: "black",
                         marginTop: "1em",
                     }}
                 >
@@ -40,14 +40,14 @@ const MenuPreview = ({ children, title, image }) => {
                 <Box sx={{ margin: "1rem 5rem" }}>
                     <Divider
                         sx={{
-                            background: theme.palette.custom.lightMuted,
+                            background: theme.palette.custom.darkMuted,
                         }}
                     />
                 </Box>
                 <Typography
                     sx={{
                         textAlign: "center",
-                        color: theme.palette.custom.light,
+                        color: theme.palette.custom.dark,
                         margin: "1em 1em 0 1em",
                     }}
                 >
@@ -64,7 +64,7 @@ const MenuPreview = ({ children, title, image }) => {
                 <Link href={`/menus/${title}`}>
                     <Button
                         endIcon={<ArrowRightAlt />}
-                        variant="contained"
+                        variant="outlined"
                         color="primary"
                     >
                         View Menu

@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import NativeImage from "../../components/general/NativeImage";
 import SizedImage from "../../components/general/SizedImage";
-import { menus } from "../../siteInfo";
+import { hero, menus } from "../../siteInfo";
 
 const index = () => {
     return (
@@ -35,7 +35,13 @@ const index = () => {
                     <Typography variant="h1" sx={{ textAlign: "center" }}>
                         Sample Menus
                     </Typography>
-                    <StarBorder />
+                    <Box sx={{ margin: "1rem 0" }}>
+                        <SizedImage
+                            image={menus.imageOne}
+                            height={50}
+                            width={150}
+                        />
+                    </Box>
                     <Typography sx={{ maxWidth: "75ch", textAlign: "center" }}>
                         Whether you&rsquo;re looking for a modest selection of
                         choice appetizers, a hearty luncheon, or an all-out
@@ -54,7 +60,7 @@ const index = () => {
                         flexDirection: "column",
                         alignItems: "center",
                         gap: "2rem",
-                        margin: "4rem 0",
+                        margin: "4rem 0 2rem 0",
                     }}
                 >
                     <Typography
@@ -86,8 +92,14 @@ const index = () => {
                         <Link href="/menus/cocktail">Cocktail</Link>
                     </Typography>
                 </Box>
-                <Box sx={{ display: "flex", justifyContent: "center" }}>
-                    <Favorite />
+                <Box
+                    sx={{
+                        transform: "scaleY(1)",
+                        display: "flex",
+                        justifyContent: "center",
+                    }}
+                >
+                    <SizedImage image={hero.imageTwo} height={50} width={125} />
                 </Box>
             </Container>
         </Box>

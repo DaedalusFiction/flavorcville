@@ -37,7 +37,13 @@ const index = () => {
                 <Typography variant="h1" sx={{ textAlign: "center" }}>
                     Greek Life
                 </Typography>
-                <StarBorder />
+                <Box sx={{ margin: "1rem 0" }}>
+                    <SizedImage
+                        image={menus.imageOne}
+                        height={50}
+                        width={150}
+                    />
+                </Box>
 
                 <Typography
                     sx={{
@@ -59,7 +65,7 @@ const index = () => {
                         textAlign: { xs: "left", md: "center" },
                     }}
                 >
-                    And when it comes to Greek Life, you also want to know that
+                    When it comes to Greek Life, you also want to know that
                     you&rsquo;re offering something unique, something that will
                     spark conversations outside of the chapter house.
                     That&rsquo;s why we are committed to working closely with
@@ -77,11 +83,13 @@ const index = () => {
                     you&rsquo;ll feel confident when you say you&rsquo;ve got
                     the best food in town.
                 </Typography>
-                <Link href="/contact">
-                    <Button variant="contained" color="primary">
-                        Get Started
-                    </Button>
-                </Link>
+                <Box sx={{ marginTop: ".5rem" }}>
+                    <Link href="/contact">
+                        <Button variant="outlined" color="primary">
+                            Inquire Here
+                        </Button>
+                    </Link>
+                </Box>
             </Box>
         </Container>
     );

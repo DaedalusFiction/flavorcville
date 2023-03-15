@@ -5,21 +5,10 @@ import Hero from "../components/home/Hero";
 
 import Meta from "../components/home/Meta";
 import theme from "../styles/themes/theme";
-import { homePage, personalItems, portfolioProjects } from "../siteInfo";
+import { hero, homePage } from "../siteInfo";
 import NativeImage from "../components/general/NativeImage";
-import BlockQuote from "../components/general/BlockQuote";
-import ProjectPreview from "../components/home/ProjectPreview";
-import ExpandingText from "../components/general/ExpandingText";
-import SocialMediaIcons from "../components/general/SocialMediaIcons";
-import {
-    Favorite,
-    MailOutline,
-    OpenInNew,
-    StarBorder,
-    SubdirectoryArrowLeft,
-} from "@mui/icons-material";
+import { StarBorder } from "@mui/icons-material";
 import SizedImage from "../components/general/SizedImage";
-import CornerBorders from "../components/general/CornerBorders";
 import SellingPoint from "../components/home/SellingPoint";
 import Link from "next/link";
 import MenuPreview from "../components/home/MenuPreview";
@@ -66,7 +55,13 @@ export default function Home() {
                                 exceptional, we are here to craft an experience
                                 that fits your needs perfectly!
                             </Typography>
-                            <Favorite />
+                            <Box sx={{ transform: "scaleY(1)" }}>
+                                <SizedImage
+                                    image={hero.imageTwo}
+                                    height={100}
+                                    width={250}
+                                />
+                            </Box>
                         </Box>
                     </Grid>
                 </Grid>
@@ -74,11 +69,11 @@ export default function Home() {
 
             <Box
                 className="section"
-                sx={{ backgroundColor: theme.palette.primary.main }}
+                sx={{ backgroundColor: theme.palette.secondary.main }}
             >
-                <Container maxWidth="lg">
-                    <Grid container>
-                        <Grid item xs={12} md={3.5}>
+                <Container maxWidth="xl">
+                    <Grid container spacing={4}>
+                        <Grid item xs={12} md={4}>
                             <SellingPoint title="Responsive">
                                 There&rsquo;s nothing we love more than working
                                 directly with our clients and getting to know
@@ -91,26 +86,22 @@ export default function Home() {
                             </SellingPoint>
                         </Grid>
 
-                        <VerticalDivider
-                            width={0.75}
-                            color={theme.palette.custom.lightMuted}
-                        />
-                        <Grid item xs={12} md={3.5}>
-                            <SellingPoint title="Attentive">
-                                We will make sure that every detail taken care
-                                of by attending walk-throughs and maintaining
-                                contact throughout the days leading up to your
-                                event, so that if anything changes, we can
-                                handle it. We&rsquo;ll staff your event
-                                thoroughly so that each guest feels that they
-                                are taken care of on a personal level.
-                            </SellingPoint>
+                        <Grid item xs={12} md={4}>
+                            <Box
+                                sx={{
+                                    height: "100%",
+                                    backgroundImage:
+                                        "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/doug.webp)",
+                                    backgroundSize: "cover",
+                                    backgroundPosition: {
+                                        xs: "0% 0%",
+                                        md: "40% 0%",
+                                    },
+                                }}
+                            ></Box>
                         </Grid>
-                        <VerticalDivider
-                            width={0.75}
-                            color={theme.palette.custom.lightMuted}
-                        />
-                        <Grid item xs={12} md={3.5}>
+
+                        <Grid item xs={12} md={4}>
                             <SellingPoint title="Experienced">
                                 <strong>Flavor</strong> has over 30 years
                                 combined experience in the fields of Catering
@@ -128,7 +119,7 @@ export default function Home() {
             <Box
                 sx={{
                     backgroundImage:
-                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner3.webp)",
+                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner4.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
                     height: { xs: "0", md: "40vh" },
@@ -143,7 +134,7 @@ export default function Home() {
                         variant="h6"
                         sx={{
                             textAlign: "center",
-                            color: theme.palette.custom.light,
+                            color: "black",
                         }}
                     >
                         Vegetarian & Vegan Friendly
@@ -151,7 +142,7 @@ export default function Home() {
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
                         <Divider
                             sx={{
-                                background: theme.palette.custom.lightMuted,
+                                background: theme.palette.custom.dark,
                                 margin: "1rem 0",
                                 width: "20rem",
                             }}
@@ -160,7 +151,7 @@ export default function Home() {
                     <Typography
                         sx={{
                             textAlign: "center",
-                            color: theme.palette.custom.light,
+                            color: "black",
                         }}
                     >
                         <strong>Flavor Exceptional Catering</strong> is
@@ -175,16 +166,30 @@ export default function Home() {
                     <Typography
                         sx={{
                             textAlign: "center",
-                            color: theme.palette.custom.light,
+                            color: theme.palette.custom.dark,
                         }}
                     >
-                        But our commitment doesn&rsquo;t end with vegetarian and
+                        Our commitment doesn&rsquo;t end with vegetarian and
                         vegan options. Whether you&rsquo;re looking for a meal
                         plan that is gluten-free and/or dairy-free, that works
                         around allergies or any other preferences, we&rsquo;ll
                         work with you to make sure you get exactly what
                         you&rsquo;re looking for.
                     </Typography>
+                    <Box
+                        sx={{
+                            transform: "scaleY(1)",
+                            display: "flex",
+                            justifyContent: "center",
+                            marginTop: ".5rem",
+                        }}
+                    >
+                        <SizedImage
+                            image={hero.imageTwo}
+                            height={100}
+                            width={250}
+                        />
+                    </Box>
                 </Container>
             </Box>
             <Stripes />
@@ -269,10 +274,7 @@ export default function Home() {
                                         }}
                                     >
                                         <Link href="/about">
-                                            <Button
-                                                variant="contained"
-                                                color="primary"
-                                            >
+                                            <Button color="primary">
                                                 Learn More
                                             </Button>
                                         </Link>
@@ -309,7 +311,7 @@ export default function Home() {
                     <Typography
                         variant="h6"
                         sx={{
-                            color: theme.palette.custom.light,
+                            color: "black",
                             textAlign: "center",
                             fontSize: "4rem",
                             marginBottom: ".5em",
@@ -332,7 +334,7 @@ export default function Home() {
                                 </MenuPreview>
                             </Grid>
                             <VerticalDivider
-                                color={theme.palette.custom.lightMuted}
+                                color={theme.palette.custom.dark}
                                 width={0.4}
                             />
                             <Grid item xs={12} md={2.7}>
@@ -350,7 +352,7 @@ export default function Home() {
 
                             <VerticalDivider
                                 width={0.4}
-                                color={theme.palette.custom.lightMuted}
+                                color={theme.palette.custom.dark}
                             />
                             <Grid item xs={12} md={2.7}>
                                 <MenuPreview
@@ -366,7 +368,7 @@ export default function Home() {
                             </Grid>
                             <VerticalDivider
                                 width={0.4}
-                                color={theme.palette.custom.lightMuted}
+                                color={theme.palette.custom.dark}
                             />
                             <Grid item xs={12} md={2.7}>
                                 <MenuPreview
@@ -382,6 +384,20 @@ export default function Home() {
                                 </MenuPreview>
                             </Grid>
                         </Grid>
+                        <Box
+                            sx={{
+                                transform: "scaleY(1)",
+                                display: "flex",
+                                justifyContent: "center",
+                                marginTop: "2rem",
+                            }}
+                        >
+                            <SizedImage
+                                image={hero.imageTwo}
+                                height={100}
+                                width={250}
+                            />
+                        </Box>
                     </Box>
                 </Container>
             </Box>
@@ -404,9 +420,6 @@ export default function Home() {
                                 <Typography variant="h2">
                                     Our Partners
                                 </Typography>
-                                <StarBorder
-                                    color={theme.palette.primary.main}
-                                />
                                 <Typography
                                     sx={{
                                         maxWidth: "35ch",
@@ -420,6 +433,19 @@ export default function Home() {
                                     official caterer of the{" "}
                                     <strong>Foxfield Races</strong>.
                                 </Typography>
+                                <Box
+                                    sx={{
+                                        transform: "scaleY(1)",
+                                        display: "flex",
+                                        justifyContent: "center",
+                                    }}
+                                >
+                                    <SizedImage
+                                        image={hero.imageTwo}
+                                        height={50}
+                                        width={125}
+                                    />
+                                </Box>
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={7}>
@@ -431,7 +457,13 @@ export default function Home() {
                                 }}
                             >
                                 <Divider />
-                                <Typography variant="h6">
+                                <Typography
+                                    variant="h2"
+                                    sx={{
+                                        fontSize: "1.5rem",
+                                        margin: ".5em 0",
+                                    }}
+                                >
                                     Preferred Venues
                                 </Typography>
                                 <Grid container>
@@ -444,13 +476,16 @@ export default function Home() {
                                             }}
                                         >
                                             <Typography>
+                                                UVA Alumni Hall
+                                            </Typography>
+                                            <Typography>
                                                 Michael Shaps Winery
                                             </Typography>
                                             <Typography>
-                                                Dairy Market
+                                                The Brick Cellar
                                             </Typography>
                                             <Typography>
-                                                UVA Alumni Hall
+                                                Random Row Brewing Company
                                             </Typography>
                                         </Box>
                                     </Grid>
@@ -482,7 +517,7 @@ export default function Home() {
             <Box
                 sx={{
                     backgroundImage:
-                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner4.webp)",
+                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner3.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
                     height: { xs: "0", md: "40vh" },
@@ -520,7 +555,13 @@ export default function Home() {
                                 spending quality time with your family and
                                 cherished ones.
                             </Typography>
-                            <Favorite />
+                            <Box sx={{ transform: "scaleY(1)" }}>
+                                <SizedImage
+                                    image={hero.imageTwo}
+                                    height={50}
+                                    width={125}
+                                />
+                            </Box>
                         </Box>
                     </Grid>
                 </Grid>

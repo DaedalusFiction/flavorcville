@@ -1,3 +1,4 @@
+import { ArrowRightAlt } from "@mui/icons-material";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import { hero } from "../../siteInfo";
@@ -44,7 +45,7 @@ const Hero = () => {
                         <Typography
                             variant="h1"
                             sx={{
-                                color: theme.palette.custom.light,
+                                color: "black",
                                 textAlign: "center",
                             }}
                         >
@@ -54,7 +55,7 @@ const Hero = () => {
                             variant="body2"
                             sx={{
                                 fontFamily: "Alex Brush",
-                                color: theme.palette.custom.light,
+                                color: theme.palette.custom.dark,
                                 textAlign: "center",
                                 fontSize: "2.5rem",
                             }}
@@ -73,12 +74,20 @@ const Hero = () => {
                             }}
                         >
                             <Link href="/contact">
-                                <Button variant="contained" color="primary">
+                                <Button
+                                    variant="outlined"
+                                    color="primary"
+                                    // endIcon={<ArrowRightAlt />}
+                                >
                                     View Menus
                                 </Button>
                             </Link>
                             <Link href="/contact">
-                                <Button variant="contained" color="primary">
+                                <Button
+                                    variant="outlined"
+                                    color="primary"
+                                    // endIcon={<ArrowRightAlt />}
+                                >
                                     Book Now
                                 </Button>
                             </Link>

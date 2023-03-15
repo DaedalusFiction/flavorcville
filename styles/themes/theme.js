@@ -4,12 +4,13 @@ let theme = createTheme({
     palette: {
         mode: "light",
         primary: {
-            main: "#0D3B66",
+            // main: "#A0AFA4",
+            main: "#484041", //black
             off: "#FBFFF1",
         },
         secondary: {
-            main: "#FF4724",
-            // main: "#F95738",
+            main: "#b9c8bd", //light green
+            main: "#A0AFA4", //dark green\
         },
         background: {
             // default: "#fefefe",
