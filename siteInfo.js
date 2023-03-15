@@ -50,7 +50,7 @@ const header = {
 
 const homePage = {
     image: {
-        url: "/images/aboutPreview.webp",
+        url: "/images/previewAbout.webp",
         alt: "Chefs Danny and Sandy",
     },
     image2: { url: "/images/stock2.webp", alt: "stock image" },

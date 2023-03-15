@@ -15,7 +15,7 @@ const Hero = () => {
                         sx={{
                             height: "100%",
                             backgroundImage:
-                                "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/hero.webp)",
+                                "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/charcuterie.webp)",
                             backgroundSize: "cover",
                             backgroundPosition: { xs: "0% 0%", md: "40% 0%" },
                         }}
