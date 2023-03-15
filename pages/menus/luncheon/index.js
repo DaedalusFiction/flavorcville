@@ -2,7 +2,7 @@ import { Favorite, StarBorder } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import SizedImage from "../../../components/general/SizedImage";
-import { menus } from "../../../siteInfo";
+import { hero, menus } from "../../../siteInfo";
 
 const index = () => {
     return (
@@ -89,7 +89,17 @@ const index = () => {
                     <Typography variant="h6" sx={{ marginTop: ".5em" }}>
                         Bon App&eacute;tit
                     </Typography>
-                    <Favorite />
+                    <Box
+                        sx={{
+                            transform: "scaleY(1)",
+                        }}
+                    >
+                        <SizedImage
+                            image={hero.imageTwo}
+                            height={50}
+                            width={125}
+                        />
+                    </Box>
                 </Box>
             </Container>
         </Box>
