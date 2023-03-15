@@ -9,8 +9,7 @@ let theme = createTheme({
             off: "#FBFFF1",
         },
         secondary: {
-            main: "#b9c8bd", //light green
-            main: "#A0AFA4", //dark green\
+            main: "#cbdccf", //light green
         },
         background: {
             // default: "#fefefe",

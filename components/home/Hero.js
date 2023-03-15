@@ -35,7 +35,12 @@ const Hero = () => {
                             gap: "1rem",
                         }}
                     >
-                        <Box sx={{ transform: "scaleY(-1)" }}>
+                        <Box
+                            sx={{
+                                transform: "scaleY(-1)",
+                                display: { xs: "none", md: "flex" },
+                            }}
+                        >
                             <SizedImage
                                 image={hero.imageTwo}
                                 height={100}
@@ -45,7 +50,7 @@ const Hero = () => {
                         <Typography
                             variant="h1"
                             sx={{
-                                color: "black",
+                                color: { xs: "white", md: "black" },
                                 textAlign: "center",
                             }}
                         >
@@ -55,7 +60,10 @@ const Hero = () => {
                             variant="body2"
                             sx={{
                                 fontFamily: "Alex Brush",
-                                color: theme.palette.custom.dark,
+                                color: {
+                                    xs: "white",
+                                    md: theme.palette.custom.dark,
+                                },
                                 textAlign: "center",
                                 fontSize: "2.5rem",
                             }}
@@ -67,7 +75,32 @@ const Hero = () => {
 
                         <Box
                             sx={{
-                                display: "flex",
+                                display: { xs: "flex", md: "none" },
+                                gap: "1em",
+                                justifyContent: "center",
+                                marginTop: "1rem",
+                            }}
+                        >
+                            <Typography
+                                sx={{
+                                    lineHeight: "1.25em",
+                                    color: "white",
+                                }}
+                            >
+                                <Link href="/menus">View Menus</Link>
+                            </Typography>
+                            <Typography
+                                sx={{
+                                    lineHeight: "1.25em",
+                                    color: "white",
+                                }}
+                            >
+                                <Link href="/contact">Inquire Here</Link>
+                            </Typography>
+                        </Box>
+                        <Box
+                            sx={{
+                                display: { xs: "none", md: "flex" },
                                 gap: "1em",
                                 justifyContent: "center",
                                 marginTop: "1rem",
@@ -88,15 +121,17 @@ const Hero = () => {
                                     color="primary"
                                     // endIcon={<ArrowRightAlt />}
                                 >
-                                    Book Now
+                                    Inquire Here
                                 </Button>
                             </Link>
                         </Box>
-                        <SizedImage
-                            image={hero.imageTwo}
-                            height={100}
-                            width={250}
-                        />
+                        <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                            <SizedImage
+                                image={hero.imageTwo}
+                                height={100}
+                                width={250}
+                            />
+                        </Box>
                     </Box>
                 </Grid>
             </Grid>

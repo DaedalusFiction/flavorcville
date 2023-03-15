@@ -7,7 +7,7 @@ const Stripes = () => {
             sx={{
                 padding: "3rem 0",
                 background:
-                    "repeating-linear-gradient( 45deg, transparent, transparent 5px, #A0AFA4 5px, #A0AFA4 10px)",
+                    "repeating-linear-gradient( 45deg, transparent, transparent 5px, #cbdccf 5px, #cbdccf 10px)",
             }}
         />
     );
