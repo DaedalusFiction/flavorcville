@@ -7,23 +7,25 @@ import Meta from "../components/home/Meta";
 import theme from "../styles/themes/theme";
 import { hero, homePage } from "../siteInfo";
 import NativeImage from "../components/general/NativeImage";
-import { StarBorder } from "@mui/icons-material";
+import Carousel from "../components/general/Carousel";
 import SizedImage from "../components/general/SizedImage";
 import SellingPoint from "../components/home/SellingPoint";
 import Link from "next/link";
 import MenuPreview from "../components/home/MenuPreview";
 import VerticalDivider from "../components/layout/VerticalDivider";
 import Stripes from "../components/layout/Stripes";
+import SocialMediaIconsSidebar from "../components/general/SocialMediaIconsSidebar";
 
 export default function Home() {
     return (
-        <Container maxWidth="xl" disableGutters>
+        <Container maxWidth="xl" disableGutters sx={{ position: "relative" }}>
             <Meta />
             <Hero />
             <Stripes />
+            {/* <SocialMediaIconsSidebar color="primary" direction="column" /> */}
             <Container maxWidth="xl">
-                <Grid className="section" id="showcase" container spacing={4}>
-                    <Grid item xs={12}>
+                <Grid id="showcase" container spacing={4}>
+                    <Grid item xs={12} md={12}>
                         <Box
                             sx={{
                                 display: "flex",
@@ -31,6 +33,7 @@ export default function Home() {
                                 justifyContent: "center",
                                 alignItems: "center",
                                 gap: "1rem",
+                                padding: "6rem 2rem 4.5rem 2rem",
                             }}
                         >
                             <Typography
@@ -64,12 +67,38 @@ export default function Home() {
                             </Box>
                         </Box>
                     </Grid>
+                    {/* <Grid item xs={12} md={8}>
+                        <Carousel>
+                            <SizedImage
+                                image={homePage.image}
+                                height="400px"
+                                width="600px"
+                            />
+                            <SizedImage
+                                image={homePage.image3}
+                                height="400px"
+                                width="600px"
+                            />
+                            <SizedImage
+                                image={homePage.image4}
+                                height="400px"
+                                width="600px"
+                            />
+                            <SizedImage
+                                image={homePage.image5}
+                                height="400px"
+                                width="600px"
+                            />
+                        </Carousel>
+                    </Grid> */}
                 </Grid>
             </Container>
 
             <Box
-                className="section"
-                sx={{ backgroundColor: theme.palette.secondary.main }}
+                sx={{
+                    backgroundColor: theme.palette.secondary.main,
+                    padding: "14rem 0 6rem 0",
+                }}
             >
                 <Container maxWidth="xl">
                     <Grid container spacing={4}>

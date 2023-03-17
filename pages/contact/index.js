@@ -29,12 +29,6 @@ const index = () => {
                         <br />
                         <Grid container spacing={2}>
                             <Grid item xs={3}>
-                                <Typography>Phone:</Typography>
-                            </Grid>
-                            <Grid item xs={9}>
-                                <Typography>(434) 760-3777</Typography>
-                            </Grid>
-                            <Grid item xs={3}>
                                 <Typography>Email:</Typography>
                             </Grid>
                             <Grid item xs={9}>
