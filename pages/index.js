@@ -22,7 +22,16 @@ export default function Home() {
             <Meta />
             <Hero />
             <Stripes />
-            {/* <SocialMediaIconsSidebar color="primary" direction="column" /> */}
+            {/* <Box
+                sx={{
+                    position: "fixed",
+                    top: "45vh",
+                    left: "5vw",
+                    zIndex: "10",
+                }}
+            >
+                <SocialMediaIconsSidebar color="primary" direction="column" />
+            </Box> */}
             <Container maxWidth="xl">
                 <Grid id="showcase" container spacing={4}>
                     <Grid item xs={12} md={12}>
@@ -70,22 +79,17 @@ export default function Home() {
                     {/* <Grid item xs={12} md={8}>
                         <Carousel>
                             <SizedImage
-                                image={homePage.image}
+                                image={homePage.image7}
                                 height="400px"
                                 width="600px"
                             />
                             <SizedImage
-                                image={homePage.image3}
+                                image={homePage.image8}
                                 height="400px"
                                 width="600px"
                             />
                             <SizedImage
-                                image={homePage.image4}
-                                height="400px"
-                                width="600px"
-                            />
-                            <SizedImage
-                                image={homePage.image5}
+                                image={homePage.image9}
                                 height="400px"
                                 width="600px"
                             />
