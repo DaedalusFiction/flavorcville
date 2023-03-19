@@ -30,7 +30,7 @@ const menus = {
     imageSix: { url: "/images/cocktail.webp", alt: "stock image" },
 };
 const greek = {
-    imageOne: { url: "/images/greek1.jpg", alt: "chicken salad" },
+    imageOne: { url: "/images/dinner.webp", alt: "chicken salad" },
     imageFour: { url: "/images/stock4.webp", alt: "stock image" },
     imageFive: { url: "/images/stock3.webp", alt: "stock image" },
     imageSix: { url: "/images/stock6.webp", alt: "stock image" },
