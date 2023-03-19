@@ -165,6 +165,7 @@ export default function Home() {
                 <Container maxWidth="md">
                     <Typography
                         variant="h6"
+                        component="p"
                         sx={{
                             textAlign: "center",
                             color: "black",

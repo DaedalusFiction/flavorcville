@@ -16,28 +16,28 @@ const Meta = () => {
 
                 <link
                     rel="preload"
-                    href="/fonts/EBGaramond-VariableFont_wght.ttf"
+                    href="/fonts/EBGaramond-VariableFont_wght.woff2"
                     as="font"
-                    type="font/ttf"
+                    type="font/woff2"
                     crossOrigin="anonymous"
                 ></link>
                 <link
                     rel="preload"
-                    href="/fonts/Raleway-VariableFont_wght.ttf"
+                    href="/fonts/Raleway-VariableFont_wght.woff2"
                     as="font"
-                    type="font/ttf"
+                    type="font/woff2"
                     crossOrigin="anonymous"
                 ></link>
                 <meta
                     data-n-head="ssr"
                     data-hid="description"
                     name="description"
-                    content="Website for Flavor Exceptional Catering"
+                    content="Flavor Exceptional Catering"
                 />
                 <meta
                     data-n-head="ssr"
                     name="twitter:card"
-                    content="Website for Flavor Exceptional Catering"
+                    content="Flavor Exceptional Catering"
                 />
                 <meta
                     data-n-head="ssr"
@@ -47,7 +47,7 @@ const Meta = () => {
                 <meta
                     data-n-head="ssr"
                     name="twitter:description"
-                    content="Website for Flavor Exceptional Catering"
+                    content="Flavor Exceptional Catering"
                 />
                 <meta
                     data-n-head="ssr"
@@ -70,7 +70,7 @@ const Meta = () => {
                 <meta
                     data-n-head="ssr"
                     name="og:description"
-                    content="Website for Flavor Exceptional Catering"
+                    content="Flavor Exceptional Catering"
                 />
                 <meta
                     data-n-head="ssr"
