@@ -19,6 +19,7 @@ const SellingPoint = ({ children, title }) => {
         >
             <Typography
                 variant="h5"
+                component="p"
                 sx={{
                     color: "black",
                     textTransform: "uppercase",
