@@ -25,7 +25,7 @@ const Hero = () => {
                     <Box
                         sx={{
                             background: {
-                                xs: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/lunch.webp)",
+                                xs: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/dinnerHeader.webp)",
                                 md: theme.palette.secondary.main,
                             },
                             padding: "20vh 4rem 20vh 4rem",
