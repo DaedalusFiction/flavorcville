@@ -250,6 +250,7 @@ export default function Home() {
                                 >
                                     <Typography
                                         variant="h6"
+                                        component="p"
                                         sx={{
                                             textAlign: "center",
                                             fontSize: "4rem",
@@ -344,6 +345,7 @@ export default function Home() {
                 <Container maxWidth="xl">
                     <Typography
                         variant="h6"
+                        component="p"
                         sx={{
                             color: "black",
                             textAlign: "center",
@@ -451,7 +453,7 @@ export default function Home() {
                                     gap: "1rem",
                                 }}
                             >
-                                <Typography variant="h2">
+                                <Typography variant="h6" component="p">
                                     Our Partners
                                 </Typography>
                                 <Typography
@@ -493,6 +495,7 @@ export default function Home() {
                                 <Divider />
                                 <Typography
                                     variant="h2"
+                                    component="p"
                                     sx={{
                                         fontSize: "1.5rem",
                                         margin: ".5em 0",
@@ -540,6 +543,66 @@ export default function Home() {
                                             <Typography>
                                                 The Barn at Edgewood
                                             </Typography>
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                            </Box>
+                            <Box
+                                sx={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    gap: ".5rem",
+                                }}
+                            >
+                                <br />
+                                <Divider />
+                                <Typography
+                                    variant="h2"
+                                    component="p"
+                                    sx={{
+                                        fontSize: "1.5rem",
+                                        margin: ".5em 0",
+                                    }}
+                                >
+                                    UVA Sports & Associations
+                                </Typography>
+                                <Grid container>
+                                    <Grid item xs={12} md={4}>
+                                        <Box
+                                            sx={{
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                gap: "1rem",
+                                            }}
+                                        >
+                                            <Typography>
+                                                Alumni Association
+                                            </Typography>
+                                            <Typography>Football</Typography>
+                                            <Typography>
+                                                Men&rsquo;s & Women&rsquo;s
+                                                Soccer
+                                            </Typography>
+                                            <Typography>
+                                                Men&rsquo;s & Women&rsquo;s
+                                                Lacrosse
+                                            </Typography>
+                                        </Box>
+                                    </Grid>
+                                    <Grid item xs={12} md={4}>
+                                        <Box
+                                            sx={{
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                gap: "1rem",
+                                            }}
+                                        >
+                                            <Typography>
+                                                Field Hockey
+                                            </Typography>
+                                            <Typography>Volleyball</Typography>
+                                            <Typography>Tennis</Typography>
+                                            <Typography>Softball</Typography>
                                         </Box>
                                     </Grid>
                                 </Grid>
