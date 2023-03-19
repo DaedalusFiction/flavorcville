@@ -6,7 +6,7 @@ import React from "react";
 import NativeImage from "../../components/general/NativeImage";
 import SizedImage from "../../components/general/SizedImage";
 import Stripes from "../../components/layout/Stripes";
-import { about, greek, menus } from "../../siteInfo";
+import { about, greek, hero, menus } from "../../siteInfo";
 
 const index = () => {
     return (
@@ -178,7 +178,20 @@ const index = () => {
                             marginTop: "4rem",
                         }}
                     >
-                        <Favorite />
+                        <Box
+                            sx={{
+                                transform: "scaleY(1)",
+                                display: "flex",
+                                justifyContent: "center",
+                                marginTop: ".5rem",
+                            }}
+                        >
+                            <SizedImage
+                                image={hero.imageTwo}
+                                height={100}
+                                width={250}
+                            />
+                        </Box>
                     </Box>
                 </Box>
             </Container>

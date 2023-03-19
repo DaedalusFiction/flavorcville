@@ -71,7 +71,7 @@ const Carousel = ({ children }) => {
                 >
                     <ArrowBack
                         sx={{
-                            color: "white",
+                            color: { xs: "transparent", md: "white" },
                             fontSize: "30px",
                         }}
                     />
@@ -86,6 +86,7 @@ const Carousel = ({ children }) => {
                         sx={{
                             color: "white",
                             fontSize: "30px",
+                            color: { xs: "transparent", md: "white" },
                         }}
                     />
                 </IconButton>

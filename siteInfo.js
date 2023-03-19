@@ -22,7 +22,7 @@ const menus = {
         alt: "decorative flourish",
     },
     imageThree: {
-        url: "/images/breakfast.webp",
+        url: "/images/menusHeader.webp",
         alt: "two bowls of oatmeal and fruit",
     },
     imageFour: { url: "/images/lunch.webp", alt: "stock image" },
@@ -61,6 +61,9 @@ const homePage = {
     image7: { url: "/images/carousel1.webp", alt: "stock image" },
     image8: { url: "/images/carousel2.webp", alt: "stock image" },
     image9: { url: "/images/carousel3.webp", alt: "stock image" },
+    image10: { url: "/images/carousel4.webp", alt: "stock image" },
+    image11: { url: "/images/carousel5.webp", alt: "stock image" },
+    image12: { url: "/images/carousel6.webp", alt: "stock image" },
     quote1: {
         attribution: "Charlene",
         number: "1",

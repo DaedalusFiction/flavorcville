@@ -51,6 +51,7 @@ const Hero = () => {
                             variant="h1"
                             sx={{
                                 color: { xs: "white", md: "black" },
+                                maxWidth: "15ch",
                                 textAlign: "center",
                             }}
                         >
@@ -106,7 +107,7 @@ const Hero = () => {
                                 marginTop: "1rem",
                             }}
                         >
-                            <Link href="/contact">
+                            <Link href="/menus">
                                 <Button
                                     variant="outlined"
                                     color="primary"

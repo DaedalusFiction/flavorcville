@@ -22,19 +22,20 @@ export default function Home() {
             <Meta />
             <Hero />
             <Stripes />
-            {/* <Box
+            <Box
                 sx={{
+                    display: { xs: "none", md: "flex" },
                     position: "fixed",
-                    top: "45vh",
-                    left: "5vw",
+                    top: "10rem",
+                    right: "3vw",
                     zIndex: "10",
                 }}
             >
                 <SocialMediaIconsSidebar color="primary" direction="column" />
-            </Box> */}
+            </Box>
             <Container maxWidth="xl">
                 <Grid id="showcase" container spacing={4}>
-                    <Grid item xs={12} md={12}>
+                    <Grid item xs={12} md={4}>
                         <Box
                             sx={{
                                 display: "flex",
@@ -76,10 +77,20 @@ export default function Home() {
                             </Box>
                         </Box>
                     </Grid>
-                    {/* <Grid item xs={12} md={8}>
+                    <Grid item xs={12} md={8}>
                         <Carousel>
                             <SizedImage
                                 image={homePage.image7}
+                                height="400px"
+                                width="600px"
+                            />
+                            <SizedImage
+                                image={homePage.image9}
+                                height="400px"
+                                width="600px"
+                            />
+                            <SizedImage
+                                image={homePage.image10}
                                 height="400px"
                                 width="600px"
                             />
@@ -89,19 +100,24 @@ export default function Home() {
                                 width="600px"
                             />
                             <SizedImage
-                                image={homePage.image9}
+                                image={homePage.image11}
+                                height="400px"
+                                width="600px"
+                            />
+                            <SizedImage
+                                image={homePage.image12}
                                 height="400px"
                                 width="600px"
                             />
                         </Carousel>
-                    </Grid> */}
+                    </Grid>
                 </Grid>
             </Container>
 
             <Box
                 sx={{
                     backgroundColor: theme.palette.secondary.main,
-                    padding: "14rem 0 6rem 0",
+                    padding: { xs: "6rem 0", md: "14rem 0 6rem 0" },
                 }}
             >
                 <Container maxWidth="xl">
@@ -122,7 +138,7 @@ export default function Home() {
                         <Grid item xs={12} md={4}>
                             <Box
                                 sx={{
-                                    height: "100%",
+                                    height: { xs: "40vh", md: "100%" },
                                     backgroundImage:
                                         "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/doug.webp)",
                                     backgroundSize: "cover",
@@ -152,10 +168,10 @@ export default function Home() {
             <Box
                 sx={{
                     backgroundImage:
-                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner4.webp)",
+                        "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner5.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
-                    height: { xs: "0", md: "40vh" },
+                    height: { xs: "40vh", md: "40vh" },
                 }}
             />
             <Box
@@ -325,6 +341,7 @@ export default function Home() {
                                     />
                                     <Typography
                                         variant="subtitle1"
+                                        component="p"
                                         sx={{
                                             fontSize: ".85rem",
                                             textAlign: "center",
@@ -357,7 +374,7 @@ export default function Home() {
                     </Typography>
                     <Box>
                         <Grid container spacing={4}>
-                            <Grid item xs={12} md={2.7}>
+                            <Grid item xs={12} lg={2.7}>
                                 <MenuPreview
                                     title="breakfast"
                                     image={homePage.image3}
@@ -373,7 +390,7 @@ export default function Home() {
                                 color={theme.palette.custom.dark}
                                 width={0.4}
                             />
-                            <Grid item xs={12} md={2.7}>
+                            <Grid item xs={12} lg={2.7}>
                                 <MenuPreview
                                     title="luncheon"
                                     image={homePage.image4}
@@ -390,7 +407,7 @@ export default function Home() {
                                 width={0.4}
                                 color={theme.palette.custom.dark}
                             />
-                            <Grid item xs={12} md={2.7}>
+                            <Grid item xs={12} lg={2.7}>
                                 <MenuPreview
                                     title="dinner"
                                     image={homePage.image5}
@@ -406,7 +423,7 @@ export default function Home() {
                                 width={0.4}
                                 color={theme.palette.custom.dark}
                             />
-                            <Grid item xs={12} md={2.7}>
+                            <Grid item xs={12} lg={2.7}>
                                 <MenuPreview
                                     title="cocktail"
                                     image={homePage.image6}
@@ -616,8 +633,8 @@ export default function Home() {
                     backgroundImage:
                         "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(/images/banner3.webp)",
                     backgroundSize: "cover",
-                    backgroundPosition: { xs: "0% 0%", md: "50% 50%" },
-                    height: { xs: "0", md: "40vh" },
+                    backgroundPosition: { xs: "60% 0%", md: "50% 50%" },
+                    height: { xs: "40vh", md: "40vh" },
                 }}
             />
             <Container maxWidth="xl">

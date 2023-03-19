@@ -23,6 +23,7 @@ const HeroScroller = () => {
                         variant="h1"
                         sx={{
                             color: { xs: "white", md: "black" },
+                            maxWidth: "15ch",
                             textAlign: "center",
                             marginBottom: "2em",
                         }}
