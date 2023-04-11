@@ -39,7 +39,7 @@ const Carousel = ({ children }) => {
             } else {
                 clearInterval(interval);
             }
-        }, 5000);
+        }, 4000);
         return () => clearInterval(interval);
     });
 

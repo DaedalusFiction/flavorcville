@@ -85,6 +85,11 @@ export default function Home() {
                                 width="600px"
                             />
                             <SizedImage
+                                image={homePage.image8}
+                                height="400px"
+                                width="600px"
+                            />
+                            <SizedImage
                                 image={homePage.image9}
                                 height="400px"
                                 width="600px"
@@ -95,17 +100,22 @@ export default function Home() {
                                 width="600px"
                             />
                             <SizedImage
-                                image={homePage.image8}
-                                height="400px"
-                                width="600px"
-                            />
-                            <SizedImage
                                 image={homePage.image11}
                                 height="400px"
                                 width="600px"
                             />
                             <SizedImage
                                 image={homePage.image12}
+                                height="400px"
+                                width="600px"
+                            />
+                            <SizedImage
+                                image={homePage.image13}
+                                height="400px"
+                                width="600px"
+                            />
+                            <SizedImage
+                                image={homePage.image14}
                                 height="400px"
                                 width="600px"
                             />

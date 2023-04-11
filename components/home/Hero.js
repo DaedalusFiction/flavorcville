@@ -15,7 +15,7 @@ const Hero = () => {
                         sx={{
                             height: "100%",
                             backgroundImage:
-                                "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/charcuterie.webp)",
+                                "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/homehero.webp)",
                             backgroundSize: "cover",
                             backgroundPosition: { xs: "0% 0%", md: "40% 0%" },
                         }}
@@ -25,7 +25,7 @@ const Hero = () => {
                     <Box
                         sx={{
                             background: {
-                                xs: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/dinnerHeader.webp)",
+                                xs: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/Dinner_Photo_Header.webp)",
                                 md: theme.palette.secondary.main,
                             },
                             padding: "20vh 4rem 20vh 4rem",

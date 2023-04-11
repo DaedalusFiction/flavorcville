@@ -26,7 +26,7 @@ const menus = {
         alt: "two bowls of oatmeal and fruit",
     },
     imageFour: { url: "/images/lunch.webp", alt: "stock image" },
-    imageFive: { url: "/images/dinner.webp", alt: "stock image" },
+    imageFive: { url: "/images/Dinner_Photo_Header.webp", alt: "stock image" }, //dinner photo header
     imageSix: { url: "/images/cocktail.webp", alt: "stock image" },
 };
 const greek = {
@@ -58,12 +58,17 @@ const homePage = {
     image4: { url: "/images/lunchHeader.webp", alt: "stock image" },
     image5: { url: "/images/dinnerHeader.webp", alt: "stock image" },
     image6: { url: "/images/cocktailHeader.webp", alt: "stock image" },
-    image7: { url: "/images/carousel1.webp", alt: "stock image" },
-    image8: { url: "/images/carousel2.webp", alt: "stock image" },
-    image9: { url: "/images/carousel3.webp", alt: "stock image" },
-    image10: { url: "/images/carousel4.webp", alt: "stock image" },
-    image11: { url: "/images/carousel5.webp", alt: "stock image" },
+    image7: { url: "/images/carousel2.webp", alt: "tacos" },
+    image8: {
+        url: "/images/carousel5.webp",
+        alt: "danny and sandy preparing oysters",
+    },
+    image9: { url: "/images/carousel3.webp", alt: "dinner table setting" },
+    image10: { url: "/images/carousel7.webp", alt: "bruschetta appetizers" },
+    image11: { url: "/images/carousel4.webp", alt: "buffet line at UVA" },
     image12: { url: "/images/carousel6.webp", alt: "stock image" },
+    image13: { url: "/images/carousel1.webp", alt: "stock image" },
+    image14: { url: "/images/carousel8.webp", alt: "stock image" },
     quote1: {
         attribution: "Charlene",
         number: "1",

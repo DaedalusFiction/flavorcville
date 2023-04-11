@@ -10,33 +10,33 @@ export default class MyDocument extends Document {
                 <Head>
                     <meta
                         name="keywords"
-                        content="web development, website, websites, portfolio, artist, musician, author, template, custom website, developer"
+                        content="catering, food, weddings, events, greek life, sororities, fraternities"
                     />
                     <meta
                         data-n-head="ssr"
                         data-hid="description"
                         name="description"
-                        content="Charlottesville Virginia Web Development"
+                        content="Event and Wedding Catering in Charlottesville, Virginia"
                     />
                     <meta
                         data-n-head="ssr"
                         name="twitter:card"
-                        content="Charlottesville Virginia Web Development"
+                        content="Event and Wedding Catering in Charlottesville, Virginia"
                     />
                     <meta
                         data-n-head="ssr"
                         name="twitter:title"
-                        content="Fictional Web"
+                        content="Flavor Exceptional Catering"
                     />
                     <meta
                         data-n-head="ssr"
                         name="twitter:description"
-                        content="Charlottesville Virginia Web Development"
+                        content="Event and Wedding Catering in Charlottesville, Virginia"
                     />
                     <meta
                         data-n-head="ssr"
                         name="twitter:creator"
-                        content="David Sorensen"
+                        content="Flavor Exceptional Catering"
                     />
 
                     {/* <meta data-n-head="ssr" name="og:title" content="Zuzu's Hot Five"> */}
@@ -44,18 +44,18 @@ export default class MyDocument extends Document {
                     <meta
                         data-n-head="ssr"
                         name="og:url"
-                        content="https://fictionalweb.com"
+                        content="https://flavorcville.com"
                     />
 
                     <meta
                         data-n-head="ssr"
                         name="og:description"
-                        content="Charlottesville Virginia Web Development"
+                        content="Event and Wedding Catering in Charlottesville, Virginia"
                     />
                     <meta
                         data-n-head="ssr"
                         name="og:site_name"
-                        content="Fictional Web"
+                        content="Flavor Exceptional Catering"
                     />
 
                     <link
