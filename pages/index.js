@@ -201,7 +201,7 @@ export default function Home() {
                     <Typography
                         sx={{
                             textAlign: "center",
-                            color: "black",
+                            color: theme.palette.custom.dark,
                         }}
                     >
                         <strong>Flavor Exceptional Catering</strong> is
