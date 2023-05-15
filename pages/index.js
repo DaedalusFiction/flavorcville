@@ -79,6 +79,20 @@ export default function Home() {
                     </Grid>
                     <Grid item xs={12} md={8}>
                         <Carousel>
+                            {homePage.carouselImages.map(
+                                (carouselImage, index) => {
+                                    return (
+                                        <SizedImage
+                                            key={index}
+                                            image={carouselImage.image}
+                                            height="400px"
+                                            width="600px"
+                                        />
+                                    );
+                                }
+                            )}
+                        </Carousel>
+                        {/* <Carousel>
                             <SizedImage
                                 image={homePage.image7}
                                 height="400px"
@@ -119,7 +133,7 @@ export default function Home() {
                                 height="400px"
                                 width="600px"
                             />
-                        </Carousel>
+                        </Carousel> */}
                     </Grid>
                 </Grid>
             </Container>
