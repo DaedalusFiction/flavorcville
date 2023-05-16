@@ -15,9 +15,9 @@ const Hero = () => {
                         sx={{
                             height: "100%",
                             backgroundImage:
-                                "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/homehero.webp)",
+                                "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/newHero.webp)",
                             backgroundSize: "cover",
-                            backgroundPosition: { xs: "0% 0%", md: "40% 0%" },
+                            backgroundPosition: { xs: "0% 0%", md: "30% 50%" },
                         }}
                     ></Box>
                 </Grid>
