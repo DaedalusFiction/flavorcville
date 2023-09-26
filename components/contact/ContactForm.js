@@ -16,7 +16,8 @@ const ContactForm = ({ config }) => {
             website: formData.website,
             name: formData.fields[0].value,
             email: formData.fields[1].value,
-            comment: formData.fields[2].value,
+            phone: formData.fields[2].value,
+            comment: formData.fields[3].value,
         };
 
         emailjs
