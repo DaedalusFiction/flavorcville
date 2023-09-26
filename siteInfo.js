@@ -106,6 +106,7 @@ const contactConfig = {
     fields: [
         { name: "Name", type: "text", value: "" },
         { name: "Email", type: "text", value: "" },
+        { name: "Phone", type: "text", value: "" },
         { name: "Comment", type: "text", value: "", multiline: true, rows: 4 },
     ],
 };
