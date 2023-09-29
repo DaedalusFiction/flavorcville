@@ -1,52 +1,18 @@
 import { Container, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import theme from "../../styles/themes/theme";
 
-const BlockQuote = ({ children, quote }) => {
+const BlockQuote = ({ children, attribution }) => {
     return (
         <Container maxWidth="md">
             <Box
                 sx={{
                     display: "flex",
                     flexDirection: "column",
-                    margin: "6rem 0",
+                    margin: "3rem 0",
                 }}
             >
-                <Typography
-                    sx={{ textAlign: "end", transform: "translateY(-1.5em)" }}
-                >
-                    / testimonial /
-                </Typography>
                 <Box sx={{ position: "relative" }}>
-                    <Box
-                        sx={{
-                            display: { xs: "none", sm: "flex" },
-                            position: "absolute",
-                            bottom: "0",
-                            left: "-1em",
-                            height: "30%",
-                            width: "30%",
-                            borderLeft:
-                                "1px solid " + theme.palette.custom.darkMuted,
-                            borderBottom:
-                                "1px solid " + theme.palette.custom.darkMuted,
-                        }}
-                    />
-                    <Box
-                        sx={{
-                            display: { xs: "none", sm: "flex" },
-                            position: "absolute",
-                            top: "-1em",
-                            right: "-1em",
-                            height: "30%",
-                            width: "30%",
-                            borderRight:
-                                "1px solid " + theme.palette.custom.darkMuted,
-                            borderTop:
-                                "1px solid " + theme.palette.custom.darkMuted,
-                        }}
-                    />
                     <Typography
                         sx={{
                             position: "absolute",
@@ -70,12 +36,9 @@ const BlockQuote = ({ children, quote }) => {
                         {children}
                     </Typography>
                     <Typography sx={{ textAlign: "end" }}>
-                        {quote.attribution}
+                        {attribution}
                     </Typography>
                 </Box>
-                <Typography sx={{ transform: "translateY(.5em)" }}>
-                    / 0{quote.number} - 02 /
-                </Typography>
             </Box>
         </Container>
     );

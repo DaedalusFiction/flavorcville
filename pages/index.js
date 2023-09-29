@@ -15,6 +15,7 @@ import MenuPreview from "../components/home/MenuPreview";
 import VerticalDivider from "../components/layout/VerticalDivider";
 import Stripes from "../components/layout/Stripes";
 import SocialMediaIconsSidebar from "../components/general/SocialMediaIconsSidebar";
+import BlockQuote from "../components/general/BlockQuote";
 
 export default function Home() {
     return (
@@ -92,48 +93,6 @@ export default function Home() {
                                 }
                             )}
                         </Carousel>
-                        {/* <Carousel>
-                            <SizedImage
-                                image={homePage.image7}
-                                height="400px"
-                                width="600px"
-                            />
-                            <SizedImage
-                                image={homePage.image8}
-                                height="400px"
-                                width="600px"
-                            />
-                            <SizedImage
-                                image={homePage.image9}
-                                height="400px"
-                                width="600px"
-                            />
-                            <SizedImage
-                                image={homePage.image10}
-                                height="400px"
-                                width="600px"
-                            />
-                            <SizedImage
-                                image={homePage.image11}
-                                height="400px"
-                                width="600px"
-                            />
-                            <SizedImage
-                                image={homePage.image12}
-                                height="400px"
-                                width="600px"
-                            />
-                            <SizedImage
-                                image={homePage.image13}
-                                height="400px"
-                                width="600px"
-                            />
-                            <SizedImage
-                                image={homePage.image14}
-                                height="400px"
-                                width="600px"
-                            />
-                        </Carousel> */}
                     </Grid>
                 </Grid>
             </Container>
@@ -652,6 +611,20 @@ export default function Home() {
                     </Grid>
                 </Box>
             </Container>
+            <Box
+                className="section"
+                sx={{
+                    backgroundColor: theme.palette.secondary.main,
+                }}
+            >
+                <BlockQuote attribution="Ashley S. Morris">
+                    Between the spectacular venue, gorgeous florals, delicious
+                    food & drink, fun photography ops, professional casino
+                    tables, and all of the planning that made everything come
+                    together&mdash;both we and our friends and family had an
+                    incredible time.
+                </BlockQuote>
+            </Box>
             <Box
                 sx={{
                     backgroundImage:
