@@ -524,6 +524,8 @@ export default function Home() {
                                             <Typography>
                                                 Random Row Brewing Company
                                             </Typography>
+
+                                            <Typography>Level 10</Typography>
                                         </Box>
                                     </Grid>
                                     <Grid item xs={12} md={4}>
@@ -542,6 +544,9 @@ export default function Home() {
                                             </Typography>
                                             <Typography>
                                                 The Barn at Edgewood
+                                            </Typography>
+                                            <Typography>
+                                                Superfly Brewing
                                             </Typography>
                                         </Box>
                                     </Grid>
