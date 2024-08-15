@@ -3,6 +3,7 @@ import { Container } from "@mui/system";
 import PageLayout from "../../components/layout/PageLayout";
 import ContactForm from "../../components/contact/ContactForm";
 import { contactConfig } from "../../siteInfo";
+import ContactGoogleForms from "../../components/contact/ContactGoogleForms";
 
 const index = () => {
     return (
@@ -50,7 +51,8 @@ const index = () => {
                         </Grid>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <ContactForm config={contactConfig} />
+                        <ContactGoogleForms />
+                        {/* <ContactForm config={contactConfig} /> */}
                     </Grid>
                 </Grid>
             </Container>
