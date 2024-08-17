@@ -11,7 +11,7 @@ const ContactGoogleForms = () => {
                     fontWeight: "600",
                 }}
             >
-                Inquirires
+                Inquirire Here
             </Typography>
             <br />
             <Box

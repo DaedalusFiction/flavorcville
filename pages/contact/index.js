@@ -4,6 +4,7 @@ import PageLayout from "../../components/layout/PageLayout";
 import ContactForm from "../../components/contact/ContactForm";
 import { contactConfig } from "../../siteInfo";
 import ContactGoogleForms from "../../components/contact/ContactGoogleForms";
+import Link from "next/link";
 
 const index = () => {
     return (
@@ -33,8 +34,12 @@ const index = () => {
                                 <Typography>Email:</Typography>
                             </Grid>
                             <Grid item xs={9}>
-                                <Typography>
-                                    flavorcateringevents@gmail.com
+                                <Typography
+                                    sx={{ textDecoration: "underline" }}
+                                >
+                                    <a href="mailto:hello@flavorcville.com">
+                                        hello@flavorcville.com
+                                    </a>
                                 </Typography>
                             </Grid>
                             <Grid item xs={3}>
