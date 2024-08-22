@@ -37,8 +37,8 @@ const index = () => {
                                 <Typography
                                     sx={{ textDecoration: "underline" }}
                                 >
-                                    <a href="mailto:hello@flavorcville.com">
-                                        hello@flavorcville.com
+                                    <a href="mailto:events@flavorcville.com">
+                                        events@flavorcville.com
                                     </a>
                                 </Typography>
                             </Grid>

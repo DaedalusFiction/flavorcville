@@ -58,9 +58,9 @@ const Footer = () => {
                                         style={{
                                             color: theme.palette.custom.dark,
                                         }}
-                                        href="mailto:hello@flavorcville.com"
+                                        href="mailto:events@flavorcville.com"
                                     >
-                                        hello@flavorcville.com
+                                        events@flavorcville.com
                                     </a>
                                 </ExpandingText>
                             </Box>
