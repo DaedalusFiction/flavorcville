@@ -10,7 +10,11 @@ const index = () => {
     return (
         <PageLayout name="Contact Form">
             <Container maxWidth="lg" className="section">
-                <Grid container spacing={6}>
+                <Grid
+                    container
+                    direction={{ xs: "column-reverse", md: "row" }}
+                    spacing={6}
+                >
                     <Grid item xs={12} md={6}>
                         <Typography
                             variant="h6"
