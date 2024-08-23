@@ -23,10 +23,11 @@ const index = () => {
                         </Typography>
                         <Typography>
                             If you&rsquo;re planning a wedding, corporate event,
-                            birthday party, or get-together, or if you&rsquo;re
+                            birthday party, get-together, or if you&rsquo;re
                             interested in adding our Greek Life program to your
-                            fraternity or sorority, fill out this form and
-                            we&rsquo;ll be in touch!
+                            fraternity or sorority, fill out one of the forms or
+                            for general inquiries please email us below. We will
+                            be in touch soon!
                         </Typography>
                         <br />
                         <Grid container spacing={2}>
