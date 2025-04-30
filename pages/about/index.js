@@ -1,40 +1,35 @@
-import { Favorite, StarBorder } from "@mui/icons-material";
-import { Button, Divider, Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import Link from "next/link";
 import React from "react";
 import NativeImage from "../../components/general/NativeImage";
 import SizedImage from "../../components/general/SizedImage";
+import Carousel from "../../components/general/Carousel";
 import Stripes from "../../components/layout/Stripes";
-import { about, greek, hero, menus } from "../../siteInfo";
+import { about, hero, homePage } from "../../siteInfo";
 
 const index = () => {
   return (
     <Box className="section">
       <Container sx={{ marginTop: "4rem" }}>
         <Grid container spacing={8}>
-          <Grid item xs={12} md={7}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "1em",
-                alignItems: "center",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <NativeImage
-                  image={about.imageOne}
-                  url={about.imageOne.url}
-                  maxSize={600}
-                />
-              </Box>
-            </Box>
+          <Grid
+            item
+            xs={12}
+            md={7}
+            sx={{ marginBottom: "4rem", minHeight: "30rem" }}
+          >
+            <Carousel>
+              {about.carouselImages.map((carouselImage, index) => {
+                return (
+                  <SizedImage
+                    key={index}
+                    image={carouselImage.image}
+                    height="400px"
+                    width="600px"
+                  />
+                );
+              })}
+            </Carousel>
           </Grid>
           <Grid item xs={12} md={5}>
             <Box
