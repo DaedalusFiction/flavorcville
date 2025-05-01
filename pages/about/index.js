@@ -5,19 +5,14 @@ import NativeImage from "../../components/general/NativeImage";
 import SizedImage from "../../components/general/SizedImage";
 import Carousel from "../../components/general/Carousel";
 import Stripes from "../../components/layout/Stripes";
-import { about, hero, homePage } from "../../siteInfo";
+import { about, hero } from "../../siteInfo";
 
 const index = () => {
   return (
     <Box className="section">
       <Container sx={{ marginTop: "4rem" }}>
-        <Grid container spacing={8}>
-          <Grid
-            item
-            xs={12}
-            md={7}
-            sx={{ marginBottom: "4rem", minHeight: "30rem" }}
-          >
+        <Grid container spacing={4}>
+          <Grid item xs={12} lg={8}>
             <Carousel>
               {about.carouselImages.map((carouselImage, index) => {
                 return (
@@ -31,7 +26,7 @@ const index = () => {
               })}
             </Carousel>
           </Grid>
-          <Grid item xs={12} md={5}>
+          <Grid item xs={12} lg={4}>
             <Box
               sx={{
                 display: "flex",
