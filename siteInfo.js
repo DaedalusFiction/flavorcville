@@ -41,9 +41,12 @@ const about = {
   carouselImages: [
     { image: { url: "/images/flavor4.webp", alt: "tacos" } },
     { image: { url: "/images/flavor16.webp", alt: "tacos" } },
+    { image: { url: "/images/flavor97.jpeg", alt: "tacos" } },
     { image: { url: "/images/flavor72.webp", alt: "tacos" } },
+    { image: { url: "/images/flavor96.jpeg", alt: "tacos" } },
     { image: { url: "/images/flavor35.webp", alt: "tacos" } },
     { image: { url: "/images/flavor47.webp", alt: "tacos" } },
+    { image: { url: "/images/flavor98.jpeg", alt: "tacos" } },
     { image: { url: "/images/flavor49.webp", alt: "tacos" } },
   ],
 };

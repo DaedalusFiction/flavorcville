@@ -61,10 +61,10 @@ const index = () => {
       >
         <Stripes />
       </Box>
-      <Container maxWidth="md">
+      <Container maxWidth="sm">
         <Box>
           <Grid container spacing={6}>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={12}>
               <Box
                 sx={{
                   display: "flex",
@@ -100,7 +100,7 @@ const index = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={6}>
+            {/* <Grid item xs={12} md={6}>
               <Box
                 sx={{
                   display: "flex",
@@ -125,7 +125,7 @@ const index = () => {
                 <Typography>Bio coming soon...</Typography>
                 <Typography></Typography>
               </Box>
-            </Grid>
+            </Grid> */}
           </Grid>
           <Box
             sx={{
