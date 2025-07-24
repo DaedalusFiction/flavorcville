@@ -36,15 +36,15 @@ const greek = {
   imageSix: { url: "/images/stock6.webp", alt: "stock image" },
 };
 const about = {
-  imageOne: { url: "/images/about1.jpeg", alt: "Danny and Sandy at UVA" },
   imageTwo: { url: "/images/sandy2025.webp", alt: "Chef Sandy" },
-  imageThree: { url: "/images/danny2025.webp", alt: "Chef Danny" },
+  imageThree: { url: "/images/flavor97.jpeg", alt: "Chefs" },
   carouselImages: [
-    { image: { url: "/images/aboutCarousel1.webp", alt: "tacos" } },
-    { image: { url: "/images/aboutCarousel3.webp", alt: "tacos" } },
-    { image: { url: "/images/aboutCarousel4.webp", alt: "tacos" } },
-    { image: { url: "/images/aboutCarousel5.webp", alt: "tacos" } },
-    { image: { url: "/images/aboutCarousel6.webp", alt: "tacos" } },
+    { image: { url: "/images/flavor4.webp", alt: "tacos" } },
+    { image: { url: "/images/flavor16.webp", alt: "tacos" } },
+    { image: { url: "/images/flavor72.webp", alt: "tacos" } },
+    { image: { url: "/images/flavor35.webp", alt: "tacos" } },
+    { image: { url: "/images/flavor47.webp", alt: "tacos" } },
+    { image: { url: "/images/flavor49.webp", alt: "tacos" } },
   ],
 };
 const header = {
@@ -57,7 +57,7 @@ const header = {
 
 const homePage = {
   image: {
-    url: "/images/previewAbout.webp",
+    url: "/images/flavor20home.webp",
     alt: "Chefs Danny and Sandy",
   },
   image2: { url: "/images/stock2.webp", alt: "stock image" },
@@ -79,12 +79,7 @@ const homePage = {
   carouselImages: [
     { image: { url: "/images/carousel2.webp", alt: "tacos" } },
     { image: { url: "/images/carouselGuac.webp", alt: "Guacamole spread" } },
-    {
-      image: {
-        url: "/images/carousel5.webp",
-        alt: "danny and sandy preparing oysters",
-      },
-    },
+
     {
       image: {
         url: "/images/carousel3.webp",

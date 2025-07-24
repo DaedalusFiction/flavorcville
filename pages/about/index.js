@@ -115,30 +115,15 @@ const index = () => {
                   url={about.imageThree.url}
                   maxSize={600}
                 />
-                <Typography variant="h3" sx={{ marginTop: "1rem" }}>
-                  Chef Danny
+                <Typography
+                  variant="h3"
+                  sx={{ marginTop: "1rem", textAlign: "center" }}
+                >
+                  Chefs Megan and Stan
                 </Typography>
                 <Divider sx={{ width: "80%" }} />
-                <Typography>
-                  Daniel Niedermayer began his culinary career at a young age at
-                  the Keswick Hotel, where he worked as a banquet cook. He then
-                  went on to study business management at Bridgewater College.
-                  After leaving Bridgewater, he went to work for Hilton as their
-                  Director of Food and Beverage. There, he quickly fell back in
-                  love with the culinary aspects of hospitality and began
-                  training with the Culinary Institute of America and Hilton
-                  University.
-                </Typography>
-                <Typography>
-                  Danny enjoys every aspect of his role in the kitchen, from the
-                  creation of delicious, memorable dishes to the leadership of
-                  his team of charismatic and incredibly talented cooks. He
-                  would tell you that his strongest attributes are friendliness,
-                  patience, and amicable communication skills, and he cherishes
-                  the experience of meeting with each client and designing
-                  outstanding menus around their unique personalities and
-                  desires.
-                </Typography>
+                <Typography>Bio coming soon...</Typography>
+                <Typography></Typography>
               </Box>
             </Grid>
           </Grid>
