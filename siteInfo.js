@@ -58,7 +58,7 @@ const header = {
 const homePage = {
   image: {
     url: "/images/flavor20home.webp",
-    alt: "Chefs Danny and Sandy",
+    alt: "Chef Sandy",
   },
   image2: { url: "/images/stock2.webp", alt: "stock image" },
   image3: { url: "/images/breakfastHeader.webp", alt: "Breakfast Spread" },
