@@ -86,7 +86,7 @@ const index = () => {
                 <Typography>
                   Sandy Archer has a tremendous gift of hospitality and a talent
                   for culinary preparation and presentation. She has been
-                  involved in the restaurant business for more than 27 years,
+                  involved in the restaurant business for more than 34 years,
                   and she has worked in several different capacities, including
                   chef, manager, business director, and owner. She holds
                   undergraduate and graduate business degrees, both from the
