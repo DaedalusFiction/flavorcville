@@ -125,7 +125,7 @@ export default function Home() {
 
             <Grid item xs={12} md={4}>
               <SellingPoint title="Experienced">
-                <strong>Flavor</strong> has over 30 years combined experience in
+                <strong>Flavor</strong> has over years of combined experience in
                 the fields of Catering and Hospitality. We have executed
                 countless successful events, from weddings and graduation
                 parties to corporate lunches and all-day events. We guarantee
@@ -450,8 +450,10 @@ export default function Home() {
                       <Typography>Michael Shaps Winery</Typography>
                       <Typography>The Brick Cellar</Typography>
                       <Typography>Random Row Brewing Company</Typography>
-
                       <Typography>Level 10</Typography>
+                      <Typography>Morven Farm</Typography>
+                      <Typography>Tiffin Farm</Typography>
+                      <Typography>Moss Vineyards</Typography>
                     </Box>
                   </Grid>
                   <Grid item xs={12} md={4}>
@@ -466,6 +468,9 @@ export default function Home() {
                       <Typography>Eastwood Winery</Typography>
                       <Typography>The Barn at Edgewood</Typography>
                       <Typography>Superfly Brewing</Typography>
+                      <Typography>King Family Vineyards</Typography>
+                      <Typography>The Colonnade Club</Typography>
+                      <Typography>The Market at Grelen</Typography>
                     </Box>
                   </Grid>
                 </Grid>
