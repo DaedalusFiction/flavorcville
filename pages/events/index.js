@@ -46,7 +46,7 @@ const index = () => {
                 }}
                 variant="h1"
               >
-                Events
+                Weddings
               </Typography>
               <Divider />
               <Typography sx={{ maxWidth: "75ch", margin: "0 auto" }}>
