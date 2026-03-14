@@ -50,6 +50,20 @@ const about = {
     { image: { url: "/images/flavor49.webp", alt: "tacos" } },
   ],
 };
+const events = {
+  imageTwo: { url: "/images/sandy2025.webp", alt: "Chef Sandy" },
+  imageThree: { url: "/images/flavor97.jpeg", alt: "Chefs" },
+  carouselImages: [
+    { image: { url: "/images/wedding1.webp", alt: "wedding" } },
+    { image: { url: "/images/wedding2.webp", alt: "wedding photo" } },
+    { image: { url: "/images/wedding3.webp", alt: "wedding photo" } },
+    { image: { url: "/images/cigarWedding.webp", alt: "wedding photo" } },
+    { image: { url: "/images/menuWedding1.webp", alt: "wedding photo" } },
+    { image: { url: "/images/glassesWedding.webp", alt: "wedding photo" } },
+    { image: { url: "/images/gazeboWedding.webp", alt: "wedding photo" } },
+    { image: { url: "/images/menuWedding2.webp", alt: "wedding photo" } },
+  ],
+};
 const header = {
   image: {
     url: "/images/logoHeader.webp",
@@ -79,6 +93,7 @@ const homePage = {
   image12: { url: "/images/carousel6.webp", alt: "stock image" },
   image13: { url: "/images/carousel1.webp", alt: "stock image" },
   image14: { url: "/images/carousel8.webp", alt: "stock image" },
+  wedding: { url: "/images/wedding1.webp", alt: "stock image" },
   carouselImages: [
     { image: { url: "/images/carousel2.webp", alt: "tacos" } },
     { image: { url: "/images/carouselGuac.webp", alt: "Guacamole spread" } },
@@ -121,4 +136,14 @@ const contactConfig = {
 
 // 2. Layout
 
-export { hero, greek, about, menus, siteName, header, homePage, contactConfig };
+export {
+  hero,
+  events,
+  greek,
+  about,
+  menus,
+  siteName,
+  header,
+  homePage,
+  contactConfig,
+};

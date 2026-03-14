@@ -5,7 +5,7 @@ import Hero from "../components/home/Hero";
 
 import Meta from "../components/home/Meta";
 import theme from "../styles/themes/theme";
-import { hero, homePage } from "../siteInfo";
+import { events, hero, homePage } from "../siteInfo";
 import NativeImage from "../components/general/NativeImage";
 import Carousel from "../components/general/Carousel";
 import SizedImage from "../components/general/SizedImage";
@@ -16,6 +16,7 @@ import VerticalDivider from "../components/layout/VerticalDivider";
 import Stripes from "../components/layout/Stripes";
 import SocialMediaIconsSidebar from "../components/general/SocialMediaIconsSidebar";
 import BlockQuote from "../components/general/BlockQuote";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -132,6 +133,80 @@ export default function Home() {
                 that our experience will make your next event stress-free and
                 remembered for years to come.
               </SellingPoint>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+      <Box className="section" sx={{ background: theme.palette.background }}>
+        <Container maxWidth="lg">
+          <Grid container spacing={4}>
+            <Grid item xs={12} md={5}>
+              <Box
+                sx={{
+                  height: { xs: "20rem", md: "100%" },
+                  backgroundImage:
+                    "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/cheersWedding.webp)",
+                  backgroundSize: "cover",
+                }}
+              ></Box>
+              <p
+                style={{
+                  textAlign: "end",
+                  color: "gray",
+                  fontSize: "12px",
+                  margin: "0",
+                }}
+              >
+                Photograph by Paige Wrench Photography
+              </p>
+            </Grid>
+            <Grid item xs={12} md={7}>
+              <Box sx={{ transform: "scaleY(1)" }}>
+                <Typography
+                  variant="h5"
+                  component="p"
+                  sx={{
+                    color: "black",
+                    textAlign: "center",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Exceptional Celebrations
+                </Typography>
+                <hr />
+                <Typography>
+                  Your wedding day should feel like a celebration, not a
+                  checklist — and that&rsquo;s exactly what Flavor is here for.
+                  Whether you&rsquo;re just getting started or your big day is
+                  right around the corner, we offer planning support at every
+                  stage of the journey.
+                </Typography>
+                <br />
+                <Typography>
+                  From stepping in during the final weeks to walking alongside
+                  you from the very beginning, our services are designed to take
+                  the stress off your plate and put the joy back into the
+                  process. We handle the timelines, the vendor calls, the
+                  details you didn&rsquo;t know you needed to think about — so
+                  you don&rsquo;t have to. Whatever level of support feels right
+                  for you, our team shows up with care, expertise, and a genuine
+                  commitment to making your vision come to life, exactly as you
+                  imagined it.
+                </Typography>
+                <br />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Link href="/events">
+                    <Button color="primary" sx={{ border: "1px solid black" }}>
+                      Learn More
+                    </Button>
+                  </Link>
+                </Box>
+              </Box>
             </Grid>
           </Grid>
         </Container>
