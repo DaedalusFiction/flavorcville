@@ -72,7 +72,7 @@ const index = () => {
         <Box>
           <Grid container spacing={3}>
             <EventPackage
-              header="Month-of Wedding Execution"
+              header="Month-of Wedding"
               list={[
                 "Initial consultation (4–6 weeks before)",
                 "Unlimited email/phone communication during final month",
@@ -83,20 +83,22 @@ const index = () => {
                 "Full wedding day management (up to 12 hours)",
               ]}
             >
-              <Typography>
-                For couples who want support beyond just the wedding day, our
-                <strong>Month-of Coordination </strong>service allows us to step
-                in <strong>one month before</strong> the event and take over
-                planning communications.
-              </Typography>
-              <Typography>
-                We manage last-minute vendor questions, finalize a detailed
-                timeline, and make sure every detail is thoughtfully handled so
-                nothing is missed.
-              </Typography>
+              <Box sx={{ minHeight: "14rem" }}>
+                <Typography fontSize={12} sx={{ marginBottom: ".5rem" }}>
+                  For couples who want support beyond just the wedding day, our
+                  <strong> Month-of Coordination </strong>service allows us to
+                  step in <strong>one month before</strong> the event and take
+                  over planning communications.
+                </Typography>
+                <Typography fontSize={12}>
+                  We manage last-minute vendor questions, finalize a detailed
+                  timeline, and make sure every detail is thoughtfully handled
+                  so nothing is missed.
+                </Typography>
+              </Box>
             </EventPackage>
             <EventPackage
-              header="Signature Wedding Planning"
+              header="Signature Wedding"
               list={[
                 "Initial Planning Consultation to understand the couple, define the vision and set clear next steps.",
                 "Vendor Recommendations & Coordination to help you find trusted professionals and communicate your needs clearly. To assist with clarification of any vendor contracts.",
@@ -110,25 +112,27 @@ const index = () => {
                 "Up to 12 hours on day of wedding.",
               ]}
             >
-              <Typography>
-                Our <strong>Signature Planning</strong> service is designed for
-                couples who have started planning but could use professional
-                guidance to pull everything together with confidence. Maybe the
-                venue is booked and a few vendors are secured, but the growing
-                list of details feels a bit daunting. That’s where Flavor comes
-                in—to help create a smooth, stress-free journey to your wedding
-                day.
-              </Typography>
-              <Typography>
-                Starting about <strong>4–6 months before</strong> the
-                celebration, we become your trusted planning partner. We work
-                closely with you to fine-tune your vision, communicate with
-                vendors, and oversee the details so every element comes together
-                beautifully.
-              </Typography>
+              <Box sx={{ minHeight: "14rem" }}>
+                <Typography fontSize={12} sx={{ marginBottom: ".5rem" }}>
+                  Our <strong>Signature Planning</strong> service is designed
+                  for couples who have started planning but could use
+                  professional guidance to pull everything together with
+                  confidence. Maybe the venue is booked and a few vendors are
+                  secured, but the growing list of details feels a bit daunting.
+                  That’s where Flavor comes in—to help create a smooth,
+                  stress-free journey to your wedding day.
+                </Typography>
+                <Typography fontSize={12}>
+                  Starting about <strong>4–6 months before</strong> the
+                  celebration, we become your trusted planning partner. We work
+                  closely with you to fine-tune your vision, communicate with
+                  vendors, and oversee the details so every element comes
+                  together beautifully.
+                </Typography>
+              </Box>
             </EventPackage>
             <EventPackage
-              header="Full Wedding Planning"
+              header="Full Wedding"
               list={[
                 "Initial Consultation & Vision Development to capture your style, values, and dreams",
                 "Comprehensive Budget Management to maximize your investment and avoid surprises",
@@ -141,22 +145,24 @@ const index = () => {
                 "Problem Solving & Emergency Management so you never have to worry about a thing",
               ]}
             >
-              <Typography>
-                Our <strong>Full Wedding Planning</strong> service is perfect
-                for couples seeking a completely stress-free and seamless
-                journey from the moment you say “Yes!” to your final dance. If
-                you envision a wedding that truly tells your love story —
-                crafted with care, creativity, and expert precision — this
-                package is made for you.
-              </Typography>
-              <Typography>
-                <strong>From the very beginning,</strong> we step in as your
-                dedicated partner, guiding you through every stage of the
-                planning process. We manage everything — from budgeting and
-                vendor selection to design, timelines, and day-of coordination —
-                so you can relax and fully enjoy this unforgettable chapter of
-                your life.
-              </Typography>
+              <Box sx={{ minHeight: "14rem" }}>
+                <Typography fontSize={12} sx={{ marginBottom: ".5rem" }}>
+                  Our <strong>Full Wedding Planning</strong> service is perfect
+                  for couples seeking a completely stress-free and seamless
+                  journey from the moment you say “Yes!” to your final dance. If
+                  you envision a wedding that truly tells your love story —
+                  crafted with care, creativity, and expert precision — this
+                  package is made for you.
+                </Typography>
+                <Typography fontSize={12}>
+                  <strong>From the very beginning,</strong> we step in as your
+                  dedicated partner, guiding you through every stage of the
+                  planning process. We manage everything — from budgeting and
+                  vendor selection to design, timelines, and day-of coordination
+                  — so you can relax and fully enjoy this unforgettable chapter
+                  of your life.
+                </Typography>
+              </Box>
             </EventPackage>
           </Grid>
           <Box

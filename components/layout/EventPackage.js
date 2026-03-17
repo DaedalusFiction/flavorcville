@@ -21,6 +21,7 @@ const EventPackage = ({ header, list, children }) => {
       >
         <Typography
           variant="h6"
+          fontSize={36}
           sx={{ marginTop: "1rem", textAlign: "center" }}
         >
           {header}
@@ -39,8 +40,8 @@ const EventPackage = ({ header, list, children }) => {
         <ul style={{ padding: "0 0 0 1.5rem", margin: "0" }}>
           {list.map((item, index) => {
             return (
-              <li key={index}>
-                <Typography>{item}</Typography>
+              <li key={index} style={{ margin: "0 0 .5rem 0" }}>
+                <Typography fontSize={12}>{item}</Typography>
               </li>
             );
           })}
