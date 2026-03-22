@@ -10,8 +10,8 @@ import EventPackage from "../../components/layout/EventPackage";
 
 const index = () => {
   return (
-    <Box className="section">
-      <Container sx={{ marginTop: "4rem" }}>
+    <Box>
+      {/* <Container sx={{ marginTop: "4rem" }}>
         <Grid container spacing={4}>
           <Grid item xs={12} lg={8}>
             <Carousel>
@@ -67,124 +67,125 @@ const index = () => {
         }}
       >
         <Stripes />
+      </Box> */}
+      <Box
+        sx={{
+          margin: "10rem 0 4rem 0",
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+          alignItems: "center",
+        }}
+      >
+        <Typography
+          variant="h2"
+          sx={{
+            textAlign: "center",
+            fontSize: "4rem",
+            fontFamily: "Alex Brush",
+          }}
+        >
+          Planning Packages
+        </Typography>
+        <Typography sx={{ textAlign: "center", maxWidth: "75ch" }}>
+          Our planning services are designed to meet you wherever you are in
+          your wedding journey, offering thoughtful support and seamless
+          execution every step of the way. Whether you simply need expert
+          coordination in the final stretch or full-service guidance from day
+          one, we have a package tailored for you.
+        </Typography>
       </Box>
-      <Container maxWidth="xl">
-        <Box>
-          <Grid container spacing={3}>
-            <EventPackage
-              header="Month-of Wedding"
-              list={[
-                "Initial consultation (4–6 weeks before)",
-                "Unlimited email/phone communication during final month",
-                "Final venue walkthrough",
-                "Vendor confirmations & payment reminders",
-                "Custom, detailed wedding timeline",
-                "Rehearsal, Ceremony and Reception Coordination",
-                "Full wedding day management (up to 12 hours)",
-              ]}
-            >
-              <Box sx={{ minHeight: "14rem" }}>
-                <Typography fontSize={12} sx={{ marginBottom: ".5rem" }}>
-                  For couples who want support beyond just the wedding day, our
-                  <strong> Month-of Coordination </strong>service allows us to
-                  step in <strong>one month before</strong> the event and take
-                  over planning communications.
-                </Typography>
-                <Typography fontSize={12}>
-                  We manage last-minute vendor questions, finalize a detailed
-                  timeline, and make sure every detail is thoughtfully handled
-                  so nothing is missed.
-                </Typography>
-              </Box>
-            </EventPackage>
-            <EventPackage
-              header="Signature Wedding"
-              list={[
-                "Initial Planning Consultation to understand the couple, define the vision and set clear next steps.",
-                "Vendor Recommendations & Coordination to help you find trusted professionals and communicate your needs clearly. To assist with clarification of any vendor contracts.",
-                "Two Venue Site Visits: Initial visit: focused on design, decor and floorplan, Final Walk Thru: 30 days before wedding ",
-                "Budget Guidance to keep your spending on track without sacrificing your vision",
-                "Timeline Creation outlining key milestones and the wedding day schedule",
-                "Regular Check-Ins & Updates to keep you on track and confident in the process",
-                "Assistance with Design & Décor to help personalize your day with meaningful touches",
-                "Final Review & Confirmation of Vendors and Details about 4–6 weeks before your wedding",
-                "Rehearsal & Day-of Coordination: One professional and one assistant to manage the timeline, vendors, and logistics so you can enjoy your celebration worry-free",
-                "Up to 12 hours on day of wedding.",
-              ]}
-            >
-              <Box sx={{ minHeight: "14rem" }}>
-                <Typography fontSize={12} sx={{ marginBottom: ".5rem" }}>
-                  Our <strong>Signature Planning</strong> service is designed
-                  for couples who have started planning but could use
-                  professional guidance to pull everything together with
-                  confidence. Maybe the venue is booked and a few vendors are
-                  secured, but the growing list of details feels a bit daunting.
-                  That’s where Flavor comes in—to help create a smooth,
-                  stress-free journey to your wedding day.
-                </Typography>
-                <Typography fontSize={12}>
-                  Starting about <strong>4–6 months before</strong> the
-                  celebration, we become your trusted planning partner. We work
-                  closely with you to fine-tune your vision, communicate with
-                  vendors, and oversee the details so every element comes
-                  together beautifully.
-                </Typography>
-              </Box>
-            </EventPackage>
-            <EventPackage
-              header="Full Wedding"
-              list={[
-                "Initial Consultation & Vision Development to capture your style, values, and dreams",
-                "Comprehensive Budget Management to maximize your investment and avoid surprises",
-                "Vendor Sourcing & Booking with trusted professionals tailored to your needs",
-                "Design & Décor Planning to create a beautiful, cohesive look that tells your story",
-                "Regular Planning Meetings & Updates to keep you informed and confident",
-                "Detailed Wedding Day Timeline & Run-Throughs to ensure flawless flow",
-                "Unlimited Communication & Support for all questions and concerns along the way",
-                "Full Day-of Coordination overseeing vendors, setup, ceremony, and reception",
-                "Problem Solving & Emergency Management so you never have to worry about a thing",
-              ]}
-            >
-              <Box sx={{ minHeight: "14rem" }}>
-                <Typography fontSize={12} sx={{ marginBottom: ".5rem" }}>
-                  Our <strong>Full Wedding Planning</strong> service is perfect
-                  for couples seeking a completely stress-free and seamless
-                  journey from the moment you say “Yes!” to your final dance. If
-                  you envision a wedding that truly tells your love story —
-                  crafted with care, creativity, and expert precision — this
-                  package is made for you.
-                </Typography>
-                <Typography fontSize={12}>
-                  <strong>From the very beginning,</strong> we step in as your
-                  dedicated partner, guiding you through every stage of the
-                  planning process. We manage everything — from budgeting and
-                  vendor selection to design, timelines, and day-of coordination
-                  — so you can relax and fully enjoy this unforgettable chapter
-                  of your life.
-                </Typography>
-              </Box>
-            </EventPackage>
-          </Grid>
+      <Box>
+        <Grid container sx={{ height: "100%" }} spacing={3}>
+          <EventPackage
+            header="Month-of Wedding"
+            list={[
+              "Initial consultation (4–6 weeks before)",
+              "Unlimited email/phone communication during final month",
+              "Final venue walkthrough",
+              "Vendor confirmations & payment reminders",
+              "Custom, detailed wedding timeline",
+              "Rehearsal, Ceremony and Reception Coordination",
+              "Full wedding day management (up to 12 hours)",
+            ]}
+          >
+            <Box sx={{ minHeight: "8rem" }}>
+              <Typography fontSize={12} sx={{ marginBottom: ".5rem" }}>
+                For couples who want support beyond just the wedding day, our
+                <strong> Month-of Coordination </strong>service allows us to
+                step in <strong>one month before</strong> the event and take
+                over planning communications.
+              </Typography>
+              <Typography fontSize={12}>
+                We manage last-minute vendor questions, finalize a detailed
+                timeline, and make sure every detail is thoughtfully handled so
+                nothing is missed.
+              </Typography>
+            </Box>
+          </EventPackage>
+          <EventPackage
+            header="Signature Wedding"
+            list={[
+              "Initial Planning Consultation to understand the couple, define the vision and set clear next steps",
+              "Vendor Recommendations & Coordination to help you find trusted professionals and communicate your needs clearly and clarify contracts",
+              "Budget Guidance to keep your spending on track without sacrificing your vision",
+              "Timeline Creation outlining key milestones and the wedding day schedule",
+              "Assistance with Design & Décor to help personalize your day with meaningful touches",
+              "Final Review & Confirmation of Vendors and Details about 4–6 weeks before your wedding",
+              "Rehearsal & Day-of Coordination: One professional and one assistant to manage the timeline, vendors, and logistics so you can enjoy your celebration worry-free",
+            ]}
+          >
+            <Box sx={{ minHeight: "8rem" }}>
+              <Typography fontSize={12} sx={{ marginBottom: ".5rem" }}>
+                Our <strong>Signature Planning</strong> service is designed for
+                couples who have started planning but could use professional
+                guidance to pull everything together with confidence.
+              </Typography>
+            </Box>
+          </EventPackage>
+          <EventPackage
+            header="Full Wedding"
+            list={[
+              "Initial Consultation & Vision Development to capture your style, values, and dreams",
+              "Comprehensive Budget Management to maximize your investment and avoid surprises",
+              "Vendor Sourcing & Booking with trusted professionals tailored to your needs",
+              "Design & Décor Planning to create a beautiful, cohesive look that tells your story",
+              "Regular Planning Meetings & Updates to keep you informed and confident",
+              "Detailed Wedding Day Timeline & Run-Throughs to ensure flawless flow",
+              "Full Day-of Coordination overseeing vendors, setup, ceremony, and reception",
+            ]}
+          >
+            <Box sx={{ minHeight: "8rem" }}>
+              <Typography fontSize={12} sx={{ marginBottom: ".5rem" }}>
+                Our <strong>Full Wedding Planning</strong> service is perfect
+                for couples seeking a completely stress-free and seamless
+                journey from the moment you say “Yes!” to your final dance. If
+                you envision a wedding that truly tells your love story —
+                crafted with care, creativity, and expert precision — this
+                package is made for you.
+              </Typography>
+            </Box>
+          </EventPackage>
+        </Grid>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "4rem",
+          }}
+        >
           <Box
             sx={{
+              transform: "scaleY(1)",
               display: "flex",
               justifyContent: "center",
-              marginTop: "4rem",
+              marginTop: ".5rem",
             }}
           >
-            <Box
-              sx={{
-                transform: "scaleY(1)",
-                display: "flex",
-                justifyContent: "center",
-                marginTop: ".5rem",
-              }}
-            >
-              <SizedImage image={hero.imageTwo} height={100} width={250} />
-            </Box>
+            <SizedImage image={hero.imageTwo} height={100} width={250} />
           </Box>
         </Box>
-      </Container>
+      </Box>
     </Box>
   );
 };
