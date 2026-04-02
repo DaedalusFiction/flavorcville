@@ -85,7 +85,7 @@ const index = () => {
             fontFamily: "Alex Brush",
           }}
         >
-          Planning Packages
+          Wedding Planning
         </Typography>
         <Typography sx={{ textAlign: "center", maxWidth: "75ch" }}>
           Our planning services are designed to meet you wherever you are in
